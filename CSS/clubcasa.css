@@ -1,0 +1,327 @@
+
+body {
+    font-family: "Epilogue", Sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #73c1bf;
+}
+
+html, body {
+    height: 100%;
+    overflow: hidden; /* Desativa o scroll */
+}
+
+.contact-section {
+    height: 100%; /* Garante que a seção de contato ocupe 100% da altura da janela e faz parte do scroll*/
+}
+.contact-section {
+    position: relative;
+    padding: 20px 0; /* Reduza ou remova o padding superior */
+    background-color: #f9f9f9;
+}
+
+
+.container {
+    padding-top: 0; /* Remove o padding superior do container */
+    margin-top: 0; /* Remove o margin superior do container, se existir */
+}
+header {
+    font-family: "Epilogue", Sans-serif;
+    position: fixed; /* Faz o cabeçalho ficar fixo na tela */
+    top: 0; /* Posiciona o cabeçalho no topo da página */
+    left: 0;
+    width: 100%;
+    color: #ffffff0e;
+    padding: 10px;
+    z-index: 1000;
+    background-color: #eff0f4c5;
+    height: 85px;
+    opacity: 0.9;
+}
+.navbar-toggler {
+    background-color: #0a3a58; /* Cor de fundo do botão */
+}
+
+.navbar-toggler .navbar-toggler-icon {
+    background-image: none; /* Remove a imagem padrão do ícone */
+}
+
+.navbar-toggler:after {
+    content: "\f0c9"; /* Código do Font Awesome para o ícone de "hambúrguer" */
+    font-family: "Font Awesome 5 Free"; /* Dependendo do que você estiver usando */
+    font-weight: 900; /* Dependendo do que você estiver usando */
+    color:#0a3a58;/* Cor do ícone */
+}
+.logo {
+    width: 49px;
+    margin-right: 45px;
+}
+
+
+
+.menu-item a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  padding-top: 5px; /* Espaço para o traço */
+}
+
+.menu-item a::before {
+  content: "";
+  position: absolute;
+  left: 50%; /* Centraliza horizontalmente */
+  bottom: 0;
+  width: 0; /* Começa com largura 0 */
+  height: 2px; /* Altura da linha */
+  background-color: #0a3a58; /* Cor do traço */
+  transform: translateX(-50%); /* Ajusta a posição horizontal para o centro */
+  transform-origin: center; /* Origem da animação no centro */
+  transition: width 0.3s ease; /* Transição suave da largura */
+}
+
+.menu-item a:hover::before {
+  width: 50%; /* Expande a linha para a largura total */
+}
+
+nav ul {
+    font-family: "Epilogue", Sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 0%;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+nav ul li {
+    position: relative;
+    margin-right: 20px;
+}
+ 
+nav ul li a {
+    color: #0a3a58;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: 350;
+}
+
+nav ul li a:hover {
+    color: #73c1bf;
+    text-decoration: none;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+nav ul .dropdown,
+nav ul .sub-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul .sub-dropdown {
+    left: 100%;
+    top: 0;
+}
+
+nav ul li:hover > .dropdown,
+.dropdown li:hover > .sub-dropdown {
+    display: block;
+}
+
+nav ul .dropdown li a,
+nav ul .sub-dropdown li a {
+    padding: 10px 20px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+
+nav ul .dropdown li a:hover,
+nav ul .sub-dropdown li a:hover {
+    background-color: #f8f9fa;
+}
+/* Estilo da seção de contato */
+.contact-section {
+   
+    position: relative; /* Adicionado para controle de layout */
+    padding: 100px 0;
+    background-color: #f9f9f9;
+   
+}
+
+.contact-section h1 {
+    margin-top: 0; /* Remova ou ajuste este valor */
+    text-align: center;
+    color: #0a3a58;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: 150;
+}
+.contact-info a img {
+    margin-right: 10px;
+    max-width: 28px; /* Ajuste conforme necessário */
+    height: auto; /* Para manter a proporção */
+}
+
+
+.contact-section .retangulo {
+    width: 150px;
+    height: 1.5px;
+    background-color: #0a3a58;
+    margin: 10px auto 50px;
+    margin-top: -10px; /* Ajuste o valor conforme necessário */
+    margin-bottom: 35px;
+}
+
+.contact-section p {
+    font-weight: 350;
+    text-align: center;
+    font-size: 18px;
+    color:#0a3a58;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-info li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 18px;
+}
+
+.contact-info a {
+    text-decoration: none;
+    color: #0a3a58;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info a img {
+    margin-right: 10px;
+    max-width: 28px;
+    color: #0a3a58;
+   
+}
+
+.contact-form ar{
+    max-width: 25px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-control {
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+.contact-form .btn-primary {
+    background-color: #0a3a58;
+    border-color: #0a3a58;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.contact-form .btn-primary:hover {
+    background-color: #07384d;
+    border-color: #07384d;
+}
+
+.product-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+
+}
+
+.arroba {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px; /* Ajuste o tamanho conforme necessário */
+    margin-right: 5px; /* Espaço entre a imagem e o texto */
+    vertical-align:sub; /* Alinha verticalmente a imagem com o texto */
+}
+
+footer {
+    font-family: "Epilogue", Sans-serif;
+    background-color: #071f2c;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+.redes {
+  font-family: "Epilogue", Sans-serif;
+  width: 100%;
+  height: 60px;
+ 
+  background-color: #071f2c;
+  
+  align-content: center;
+  justify-content: center; /* Centraliza os itens */
+  padding: 15px;
+  align-items: center;
+  gap: 20px; /* Ajuste o valor conforme necessário para o espaço entre os itens */
+  text-decoration: none; /* Remove o sublinhado do link */
+  
+}
+
+.redes a{
+    
+  font-size: 15px;
+  margin: 0 10px;
+  text-decoration: none !important; /* Remove o sublinhado do link */
+  color:  #f5f6f7;
+  transition: color 0.3s; /* Efeito de transição ao passar o mouse */
+  font-weight: 50;
+
+}
+/* Efeito ao passar o mouse */
+.redes a:hover {
+  color:  #3ba4dd; /* Muda a cor do texto ao passar o mouse */
+}
+
+.icon{
+  margin-bottom: 2px;
+  margin-right: 5px;
+  width: 20px; /* Defina a largura desejada */
+  height: 20px; /* Defina a altura desejada */
+  vertical-align: middle; /* Alinha a imagem com o texto */
+}
+.containerfooter {
+    width: 100%;
+    padding: 0 15px; /* Adiciona algum padding lateral para melhor alinhamento */
+    display: initial;
+  }
+  

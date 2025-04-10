@@ -1,0 +1,327 @@
+/* Estilo da sidebar */
+@media (max-width: 600px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  }
+  
+  body {
+    background-color: #ffffff;
+    font-family: "Epilogue", Sans-serif;
+  }
+  
+  
+  .container {
+    width: 100%;
+    padding: 0 15px; /* Adiciona algum padding lateral para melhor alinhamento */
+  }
+  
+  header {
+    font-family: "Epilogue", Sans-serif;
+    position:fixed; /* Faz o cabeçalho ficar fixo na tela */
+    top: 0; /* Posiciona o cabeçalho no topo da página */
+    right: 0;
+    width: 100%;
+  
+    color: #ffffff0e;
+    padding: 10px;
+    z-index: 1000;
+    background-color: #0e2431;
+    height: 90px;
+    transition: top 0.3s; /* Adiciona uma transição suave */
+    
+    
+  }
+  .main-content {
+    padding-top: 90px; /* Deve corresponder à altura do cabeçalho */
+    display: flex;
+  }
+  
+  
+  .logo1 {
+    width: 49px;
+    margin-right: 45px;
+    color: #00131f;
+    
+  
+    filter: brightness(0) invert(1) grayscale(100%); /* Faz a imagem branca */
+    opacity: 0.7;
+    
+  }
+  
+  .menu-item a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 5px; /* Espaço para o traço */
+  }
+  
+  .menu-item a::before {
+    content: "";
+    position: absolute;
+    left: 50%; /* Centraliza horizontalmente */
+    bottom: 0;
+    width: 0; /* Começa com largura 0 */
+    height: 2px; /* Altura da linha */
+    background-color: #ffffff; /* Cor do traço */
+    transform: translateX(-50%); /* Ajusta a posição horizontal para o centro */
+    transform-origin: center; /* Origem da animação no centro */
+    transition: width 0.3s ease; /* Transição suave da largura */
+  }
+  
+  .menu-item a:hover::before {
+    width: 50%; /* Expande a linha para a largura total */
+  }
+  
+  nav ul {
+    font-family: "Epilogue", Sans-serif;
+    list-style: none;
+    display: flex;
+    gap: 0%;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 12px;
+  }
+  
+  nav ul li {
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    padding: 10px 20px;
+  
+    font-weight: 350;
+  }
+  
+  nav ul li a:hover {
+    color: #ffffff;
+    text-decoration: none; /* Garante-sublinhado removido no hover */
+  }
+  
+  nav ul li:hover .dropdown {
+    display: block;
+  }
+  
+  nav ul .dropdown,
+  nav ul .sub-dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    min-width: 200px;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul .sub-dropdown {
+    left: 100%;
+    top: 0;
+  }
+  
+  nav ul li:hover > .dropdown,
+  .dropdown li:hover > .sub-dropdown {
+    display: block;
+  }
+  
+  nav ul .dropdown li a,
+  nav ul .sub-dropdown li a {
+    padding: 10px 20px;
+    color: #333;
+    display: block;
+  }
+  
+  nav ul .dropdown li a:hover,
+  nav ul .sub-dropdown li a:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .sidebar {
+    height: 100vh; /* Altura total da viewport */
+    position: fixed; /* Fixa a sidebar na posição */
+    top: 0;
+    left: 0;
+    width: 250px; /* Largura da sidebar */
+    background-color: #0e2431; /* Cor de fundo da sidebar */
+    padding: 1rem; /* Espaçamento interno */
+    border-right: 1px solid #1e475f79; /* Borda direita */
+    border-width: 10px;
+    color: #ffffff;
+    z-index: 11000;
+  }
+  
+  .sidebar h4 {
+    margin-top: 15px; /* Espaçamento superior */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #ffffff; /* Cor do texto */
+    border-bottom: 2px solid #1e475f79; /* Adiciona uma linha abaixo do título */
+  
+    padding-bottom: 10px; /* Espaçamento entre o texto e a linha */
+    font-size: 23px;
+  }
+  
+  .nav-underline .nav-link {
+    color: #ffffff; /* Cor do texto do link */
+    font-weight: 500; /* Peso da fonte dos links */
+  }
+  
+  .nav-underline .nav-link:hover {
+    color: #677b87; /* Cor do texto ao passar o mouse */
+    text-decoration: underline;
+    text-decoration-color: #0a3a58;
+    text-decoration: none;
+  }
+  
+  .content {
+    margin-left: 270px; /* Espaçamento à esquerda igual à largura da sidebar */
+    margin-top: 15px; /* Espaçamento superior */
+    color: #0e2431; /* Cor de fundo da sidebar */
+    background-color: #ffffff;
+    padding: 1rem; /* Espaçamento interno */
+    
+  }
+  
+  .content h1 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 500; /* Peso da fonte dos links */
+  }
+  
+  
+  .product-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.1);
+  }
+  
+  carousel-inner {
+    background-size: cover;
+    object-fit: cover;
+  }
+  
+  .carousel-item {
+    padding: 40px 0; /* Ajuste o padding conforme necessário */
+  }
+  
+  .contact-info img arroba {
+    max-width: 20px;
+  }
+  /* Estilização básica do cartão */
+  /* Estilização básica do cartão */
+  .card {
+    margin-right: 60px; /* Ajuste conforme necessário */
+    margin-left: 15px;
+    border: 1px solid #0a3a58; /* Define a borda */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Define a sombra da caixa */
+    padding: 10px;
+    width: 200px; /* Largura fixa para todos os cartões */
+    height: 280px; /* Altura fixa para todos os cartões */
+    display: flex; /* Usando flexbox para layout */
+    flex-direction: column;
+    margin-top: 8%;
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total */
+    position: relative; /* Necessário para posicionamento do hover */
+    transition: transform 0.3s, opacity 0.3s; /* Transições suaves */
+    opacity: 1;
+  }
+  
+  /* Estilização da imagem dentro do cartão */
+  .card img {
+    display: block;
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    margin-top: 2%;
+    transition: opacity 0.3s; /* Transição suave para a opacidade */
+  }
+  
+  /* Estilização do título do cartão */
+  .card-title {
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    color: #333;
+  }
+  
+  /* Tamanho padrão da imagem do cartão */
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Efeito de hover no cartão */
+  .card:hover { 
+    transform: translateY(-20px); /* Levanta o cartão ao passar o mouse */
+    box-shadow: 0 16px 500px #0a3a585f;
+  }
+  
+  /* Efeito de hover na imagem do cartão */
+  .card:hover img {
+    opacity: 1; /* Imagem do cartão hoverado mantém a opacidade normal */
+  
+  
+  }
+  
+  /* Container dos cartões */
+  .containerCards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Adiciona espaço entre os cartões */
+  }
+  
+  /* Efeito de hover no container */
+  .containerCards:hover .card {
+    opacity: 1; /* Torna todos os cartões mais transparentes ao passar o mouse sobre o container */
+  }
+  
+  /* Remove a opacidade reduzida do cartão que está sendo hoverado */
+  .containerCards .card:hover {
+    opacity: 1; /* Torna o cartão hoverado opaco */
+  }
+  
+  /* Remove a opacidade reduzida das imagens dos cartões que estão sendo hoverados */
+  .containerCards:hover .card img {
+    opacity: 0.8; /* Torna as imagens dos cartões fora do hover mais opacas */
+  }
+  .containerCards .card:hover img {
+    opacity: 1; /* Imagem do cartão hoverado mantém a opacidade normal */
+    
+  }
+  
+  /* Estilos para telas pequenas */
+  @media (max-width: 768px) {
+    .sidebar {
+      position: static; /* Faz a sidebar fluir com o conteúdo */
+      width: 100%; /* Largura total da tela */
+      height: auto; /* Altura automática */
+      margin-bottom: 1rem; /* Espaço abaixo da sidebar */
+    }
+  
+  
+  }
+  /* Movendo o bloco de navegação um pouco para a direita */
+  nav[aria-label="Navegação de página"] {
+    margin-left: 3px; /* Ajuste o valor conforme necessário */
+  }
+  /* Movendo o bloco de navegação um pouco para a direita */
+  nav[aria-label="Navegação de página"] {
+    margin-left: 3px; /* Ajuste o valor conforme necessário */
+  }
+  
+  /* Outros estilos para centralizar a lista de paginação */
+  ul.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    list-style: none;
+    padding-left: 17%;
+  }
