@@ -325,3 +325,58 @@ footer p {
     display: initial;
   }
   
+  .clubecasa-section {
+  font-family: "Epilogue", Sans-serif;
+  background-color: #f9f9f9;
+  padding: 80px 20px;
+  text-align: center;
+  color: #0a3a58;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.clubecasa-section .retangulo {
+  width: 150px;
+  height: 2px;
+  background-color: #0a3a58;
+  margin: 0 auto 35px;
+}
+
+.clubecasa-section h1 {
+  font-size: 32px;
+  font-weight: 200;
+  margin-bottom: 25px;
+}
+
+.clubecasa-section h2 {
+  font-size: 24px;
+  font-weight: 200;
+  color: #0a3a58;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.clubecasa-section p {
+  font-size: 17px;
+  font-weight: 350;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  color: #0a3a58;
+}
+
+.link-clube {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 30px;
+  background-color: #0a3a58;
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.link-clube:hover {
+  background-color: #07384d;
+}
