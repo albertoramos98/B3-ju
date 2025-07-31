@@ -179,6 +179,10 @@ header.shrink {
     height: 600px;
     object-fit: cover;
     z-index: -1;
+    width: 100%;         /* Ocupa toda largura do container do slide */
+    height: 300px;       /* Altura fixa para todas as imagens */
+    object-fit: cover;   /* Ajusta mantendo a proporção, cortando excesso */
+    display: block;      /* Remove espaçamento indesejado em imagens inline */
   }
   
   .carousel-control-prev-icon,
@@ -513,17 +517,21 @@ header.shrink {
     padding: 20px 15px; /* Adiciona padding lateral */
   }
   .carousel-item img {
-    max-height: 100%;
-    object-fit: cover;
-    width: 100%;
-    height: 290px;
-  }
+  width: 100%;         /* Ocupa toda largura do container do slide */
+  height: 300px;       /* Altura fixa para todas as imagens */
+  object-fit: cover;   /* Ajusta mantendo a proporção, cortando excesso */
+  display: block;      /* Remove espaçamento indesejado em imagens inline */
+}
+  
   
   .carousel-item {
     position: relative;
-    width: 100%;
+   
     background-size: cover;
     background-position: center;
+    width: 100%;
+    height: 300px;  /* mesma altura das imagens para manter consistência */
+    overflow: hidden; /* evita overflow se a imagem for maior */
   }
   
   .carousel-control-prev-icon,
