@@ -5,564 +5,260 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>B3 Ambientes Corporativos</title>
+
   <link rel="stylesheet" href="CSS/b3.css" />
-  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" />
-
-  
-  
-
- 
 </head>
-
-<script>
-  let lastScrollTop = 0;
-
-  window.addEventListener("scroll", () => {
-    const scrollTop = window.scrollY || document.documentElement.scrollTop;
-    const body = document.body;
-
-    if (scrollTop > lastScrollTop) {
-      // Rolando para baixo
-      body.classList.add("scrolling-down");
-      body.classList.remove("scrolling-up");
-    } else {
-      // Rolando para cima
-      body.classList.add("scrolling-up");
-      body.classList.remove("scrolling-down");
-    }
-
-    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Evita valores negativos
-  });
-</script>
-
 
 <body>
 
-  
-  
-
   <header class="d-flex justify-content-center">
-    <nav class="navbar navbar-expand-lg navbar">
-
+    <nav class="navbar navbar-expand-lg navbar-light">
       <a class="navbar-brand" href="index.html">
         <img src="IMG/Logob3.png" alt="Logo B3 Ambientes Corporativos" class="logo" />
-
       </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="d-md-flex d-block ">
-
-          <li class="menu-item"><a href="sobrenos.html">Sobre nós</a></li>
-          <li class="menu-item">
-            <a href="produtos.html"> Produtos</a>
-            <ul class="dropdown">
-              <li class="menu-item">
-                <a href="poltrona.html"><img class="product-image"
-                    src="https://img.icons8.com/?size=100&id=25289&format=png&color=000000" alt="table" />
-                  Poltronas
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="cadeiras.html"><img class="product-image"
-                    src="https://img.icons8.com/ios/50/office-chair-2.png" alt="table" />
-                  Cadeiras</a>
-
-                <ul class="sub-dropdown">
-                  <li><a href="cadeiras.html"> Office</a></li> 
-                  <li><a href="Multifuncionais.html"> Multifuncionais</a></li>
-                  <li><a href="decor.html"> Decor</a></li>
-                  
-                 
-                </ul>
-              </li>
-              <li>
-                <a href="mobiliario.html"><img class="product-image" src="https://img.icons8.com/ios/50/table.png"
-                    alt="table" />
-                  Mobiliário</a>
-              </li>
-              <li>
-                <a href="#">
-                  <img class="product-image" src="https://img.icons8.com/isometric-line/50/report-card.png"
-                    alt="table" />
-                  Divisórias</a>
-              </li>
-              <li>
-                <a href="#"><img class="product-image"
-                    src="https://img.icons8.com/?size=100&id=11555&format=png&color=000000" alt="table" />
-                  Acústicas</a>
-              </li>
-              <li class="menu-item">
-                <a href="auditório.html"><img class="product-image"
-                    src="https://img.icons8.com/ios-filled/50/auditorium--v1.png" alt="table" />
-                  Auditório
-                </a>
-              </li>
-              <li class="menu-item">
-                <a href="puffs.html"><img class="product-image"
-                    src="https://img.icons8.com/puffy/32/sofa.png" alt="table" />
-                  Puff
-                </a>
-              </li>
-              <li>
-                <a href="sofá.html"><img class="product-image"
-                    src="https://img.icons8.com/?size=100&id=33796&format=png&color=000000" alt="table" />
-                  Sofás</a>
-              </li>
-              <li>
-                <a href="#"><img class="product-image"
-                    src="https://img.icons8.com/?size=100&id=11321&format=png&color=000000" alt="table" />
-                  Escolar</a>
-              </li>
-              <li>
-                <a href="#"><img class="product-image"
-                    src="https://img.icons8.com/?size=100&id=60612&format=png&color=000000" alt="table" />
-                  Refeitório</a>
-              </li>
-              <li>
-                <a href="#"><img class="product-image" src="https://img.icons8.com/windows/32/ellipsis.png"
-                    alt="table" />
-                  Outros</a>
-              </li>
-            </ul>
-          </li>
-          <li class="menu-item">
-            <a href="parceiros.html">Club&Casa</a>
-          </li>
-          <li class="menu-item">
-            <a href="contato.html">Contato</a>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item menu-item"><a class="nav-link" href="sobrenos.html">Sobre nós</a></li>
+          
+          <li class="nav-item menu-item dropdown">
+            <a class="nav-link dropdown-toggle" href="produtos.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Produtos
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="poltrona.html"><img class="product-image" src="https://img.icons8.com/?size=100&id=25289&format=png&color=000000" alt="Ícone Poltronas" /> Poltronas</a>
+              <a class="dropdown-item" href="cadeiras.html"><img class="product-image" src="https://img.icons8.com/ios/50/office-chair-2.png" alt="Ícone Cadeiras" /> Cadeiras</a>
+              <a class="dropdown-item" href="mobiliario.html"><img class="product-image" src="https://img.icons8.com/ios/50/table.png" alt="Ícone Mobiliário" /> Mobiliário</a>
+              <a class="dropdown-item" href="#"><img class="product-image" src="https://img.icons8.com/isometric-line/50/report-card.png" alt="Ícone Divisórias" /> Divisórias</a>
+              <a class="dropdown-item" href="#"><img class="product-image" src="https://img.icons8.com/?size=100&id=11555&format=png&color=000000" alt="Ícone Acústicas" /> Acústicas</a>
+              <a class="dropdown-item" href="auditório.html"><img class="product-image" src="https://img.icons8.com/ios-filled/50/auditorium--v1.png" alt="Ícone Auditório" /> Auditório</a>
+            </div>
           </li>
           
-         
-          <li class="menu-item">
-            <a href="#clientes">Clientes</a> 
-
-          </li>
-
+          <li class="nav-item menu-item"><a class="nav-link" href="parceiros.html">Club&Casa</a></li>
+          <li class="nav-item menu-item"><a class="nav-link" href="contato.html">Contato</a></li>
+          <li class="nav-item menu-item"><a class="nav-link" href="#clientes">Clientes</a></li>
         </ul>
       </div>
-      <div class="whatsapp-icon">
-        <a href="https://wa.me/c/558189198675" target="_blank" rel="noopener">
-          <img src="IMG/whatsappgif.gif" alt="WhatsApp" />
-        </a>
-      </div>
-      
-
-
-          </div>
-        
     </nav>
-
-
-    </div>
-
-    
-    
   </header>
 
-   <section class="top">
-    <a href="https://wa.me/c/558189198675 " target="_blank">
-        <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=0a3a58" alt="WhatsApp" class="icon">WhatsApp
+  <section class="top">
+    <a href="https://wa.me/c/558189198675" target="_blank" rel="noopener">
+      <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=0a3a58" alt="WhatsApp" class="icon">WhatsApp
     </a>
-
-    <a href="https://www.instagram.com/b3corporativos/" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/0a3a58/instagram-new.png" alt="Instagram" class="icon">b3corporativos
+    <a href="https://www.instagram.com/b3corporativos/" target="_blank" rel="noopener">
+      <img src="https://img.icons8.com/ios-filled/50/0a3a58/instagram-new.png" alt="Instagram" class="icon">b3corporativos
     </a>
-
-    <a href="tel:+5581989198675" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/0a3a58/phone.png" alt="Telefone" class="icon">(81) 4102.0102 
+    <a href="tel:+5581989198675">
+      <img src="https://img.icons8.com/ios-filled/50/0a3a58/phone.png" alt="Telefone" class="icon">(81) 4102-0102
     </a>
-
-    <a href="#horarios" target="_self">
-        <img src="https://img.icons8.com/ios-filled/50/0a3a58/clock.png" alt="Horário de Funcionamento" class="icon">Segunda - Sexta 9:00 - 18:00 | Sábado 9:00 - 13:00
+    <a href="#">
+      <img src="https://img.icons8.com/ios-filled/50/0a3a58/clock.png" alt="Horário de Funcionamento" class="icon">Segunda - Sexta 9:00 - 18:00 | Sábado 9:00 - 13:00
     </a>
-</section>
-
-  
-
-  <section class="back">
-    <!--<img src="IMG/Logob3HD.png" alt="Logo B3 Ambientes Corporativos" class="logo2" />-->
-    <!-- Carrossel Bootstrap -->
-    <div id="carouselExample" class="carousel slide first-carousel" data-ride="carousel" data-interval="3000">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="IMG/b3carrocel.jpeg" class="d-block w-100" alt="Imagem 1" />
-
-        </div>
-       
-      </div>
-      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Anterior</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Próxima</span>
-      </a>
-    </div>
   </section>
 
-  <section class="produtos">
-  <br />
-  <div class="prod">
-    <h1>Alguns dos nossos produtos</h1>
-    <div class="retangulo"></div>
-  </div>
+  <main>
 
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-
-    <!-- Slide 1 -->
-    <div class="carousel-item active">
-      <div class="row">
-        <div class="card col d-flex">
-          <img src="https://frisokar.com.br/wp-content/uploads/2022/05/09-300x300.jpg" class="card-img-top" alt="Card 1" />
-          <div class="card-body">
-            <h5 class="card-title">Cadeira Goah</h5>
+    <section class="back">
+      <div id="carouselExample" class="carousel slide first-carousel" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="IMG/b3carrocel.jpeg" class="d-block w-100" alt="Ambiente corporativo moderno da B3" />
           </div>
-        </div>
-        <div class="card col d-sm-flex d-none">
-          <img src="https://frisokar.com.br/wp-content/uploads/2021/10/DAY-001-FRISOKAR-61-300x300.jpg" class="card-img-top" alt="Card 2" />
-          <div class="card-body">
-            <h5 class="card-title">Cadeira Alles</h5>
           </div>
-        </div>
-        <div class="card col d-md-flex d-none">
-          <img src="https://frisokar.com.br/wp-content/uploads/2024/07/cadeira-giratoria-pipeline-scaled.webp" class="card-img-top" alt="Card 3" />
-          <div class="card-body">
-            <h5 class="card-title">Cadeira Pipeline</h5>
-          </div>
-        </div>
-        <div class="card col d-lg-flex d-none">
-          <img src="https://frisokar.com.br/wp-content/uploads/2024/07/5313-300x300.jpg" class="card-img-top" alt="Card 4" />
-          <div class="card-body">
-            <h5 class="card-title">Cadeira Office B.Type</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 2 -->
-    <div class="carousel-item">
-      <div class="row">
-        <div class="card col d-flex">
-          <img src="IMG/Cadeira Alles.jpg" class="card-img-top" alt="Card 5" />
-          <div class="card-body">
-            <h5 class="card-title">Cadeira Alles</h5>
-          </div>
-        </div>
-        <div class="card col d-sm-flex d-none">
-          <img src="IMG/cadeira office mona.jpg" class="card-img-top" alt="Card 6" />
-          <div class="card-body">
-            <h5 class="card-title">Cadeira Office Mona</h5>
-          </div>
-        </div>
-        <div class="card col d-md-flex d-none">
-          <img src="IMG/cadeira addit.jpg" class="card-img-top" alt="Card 7" />
-          <div class="card-body">
-            <h5 class="card-title">Cadeira Addit</h5>
-          </div>
-        </div>
-        <div class="card col d-lg-flex d-none">
-          <img src="IMG/CADEIRA OFFICE OSLO RODÍZIO CARAMELO COM MOLAS.jpg" class="card-img-top" alt="Card 8" />
-          <div class="card-body">
-            <h5 class="card-title">Cadeira Office OSLO</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 3 -->
-    <div class="carousel-item">
-      <div class="row">
-        <div class="card col d-flex">
-          <img src="IMG/CADEIRA BERGEN ALTA BRANCA.jpg" class="card-img-top" alt="Card 9" />
-          <div class="card-body">
-            <h5 class="card-title">Cadeira BERGEN</h5>
-          </div>
-        </div>
-        <div class="card col d-sm-flex d-none">
-          <img src="IMG/BLM768 DIRETOR.webp" class="card-img-top" alt="Card 10" />
-          <div class="card-body">
-            <h5 class="card-title">Cadeira BLM768 Diretor</h5>
-          </div>
-        </div>
-        <div class="card col d-md-flex d-none">
-          <img src="IMG/ANM818 D CADEIRA DIRETOR.webp" class="card-img-top" alt="Card 11" />
-          <div class="card-body">
-            <h5 class="card-title">ANM818 DIRETOR</h5>
-          </div>
-        </div>
-        <div class="card col d-lg-flex d-none">
-          <img src="IMG/ANM03 PRESIDENTE FOSCA.webp" class="card-img-top" alt="Card 12" />
-          <div class="card-body">
-            <h5 class="card-title">Cadeira Presidente Fosca</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 4 -->
-    <div class="carousel-item">
-      <div class="row">
-        <div class="card col d-flex">
-          <img src="IMG/Bix X+ Presidente.png" class="card-img-top" alt="Card 13" />
-          <div class="card-body">
-            <h5 class="card-title">Bix X+ Presidente</h5>
-          </div>
-        </div>
-        <div class="card col d-sm-flex d-none">
-          <img src="IMG/mesa de reunião.jpeg" class="card-img-top" alt="Card 14" />
-          <div class="card-body">
-            <h5 class="card-title">Mesa de Reunião 1</h5>
-          </div>
-        </div>
-        <div class="card col d-md-flex d-none">
-          <img src="IMG/mesa de reunião2.jpeg" class="card-img-top" alt="Card 15" />
-          <div class="card-body">
-            <h5 class="card-title">Mesa de Reunião 2</h5>
-          </div>
-        </div>
-        <div class="card col d-lg-flex d-none">
-          <img src="IMG/cabine acustica.jpeg" class="card-img-top" alt="Card 16" />
-          <div class="card-body">
-            <h5 class="card-title">Cabine Acústica</h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Slide 5 -->
-    <div class="carousel-item">
-      <div class="row">
-        <div class="card col d-flex">
-          <img src="IMG/cabine de reunião.jpeg" class="card-img-top" alt="Card 17" />
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-          </div>
-        </div>
-        <div class="card col d-sm-flex d-none">
-          <img src="IMG/estante.jpeg" class="card-img-top" alt="Card 18" />
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-          </div>
-        </div>
-        <div class="card col d-md-flex d-none">
-          <img src="IMG/criados mudo.jpeg" class="card-img-top" alt="Card 19" />
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-          </div>
-        </div>
-        <div class="card col d-lg-flex d-none">
-          <img src="IMG/decoração completa.jpeg" class="card-img-top" alt="Card 20" />
-          <div class="card-body">
-            <h5 class="card-title"></h5>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- Controles -->
-  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Anterior</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only" id="clientes">Próximo</span>
-  </a>
-</div>
-
-
-
-
-  <div class="textoservice">
-    <h1>Alguns dos nossos clientes</h1>
-    <div class="retangulo"></div>
-  </div>
-
-  <section class="services"  >
-    
-    <div class="clients-container" >
-      <div class="client">
-        <img src="IMG/sebrae.png" alt="tapa">
-      </div>
-      <div class="client">
-        <img src="IMG/unileaver.png" alt="seara">
-      </div>
-      <div class="client">
-        <img src="IMG/bosh.png" alt="bosh">
-      </div>
-      <div class="client">
-        <img src="IMG/basf.png" alt="sebrae">
-      </div>
-      <div class="client">
-        <img src="IMG/vivix.jpg" alt="betesport">
-      </div>
-     
-      <div class="client">
-        <img src="IMG/oab.jpg" alt="ruffo">
-      </div>
-      <div class="client">
-        <img src="IMG/seara.png" alt="realiza coworking">
-      </div>
-      <div class="client">
-        <img src="IMG/dnata.jpg" alt="denata">
-      </div>
-      <div class="client">
-        <img src="IMG/medical.jpg" alt="cia">
-      </div>
-          <div class="clients-container" >
-      <div class="client">
-        <img src="IMG/tapa.png" alt="tapa">
-      </div>
-          <div class="clients-container" >
-      <div class="client">
-        <img src="IMG/ciafit.jpg" alt="tapa">
-      </div>
-          <div class="clients-container" >
-      <div class="client">
-        <img src="IMG/tolive.jpg" alt="tapa">
-      </div>
-          <div class="clients-container" >
-      <div class="client">
-        <img src="IMG/ocapora.jpg" alt="tapa">
-      </div>
-          <div class="clients-container" >
-      <div class="client">
-        <img src="IMG/fps.jpg" alt="tapa">
-      </div>
-         <div class="clients-container" >
-      <div class="client">
-        <img src="IMG/ruffo.jpg" alt="tapa">
-      </div>
-         <div class="clients-container" >
-      <div class="client">
-        <img src="IMG/betesport.png" alt="tapa">
-      </div>
-         <div class="clients-container" >
-      <div class="client">
-        <img src="IMG/solb.jpg" alt="tapa">
-      </div>
-          <div class="clients-container" >
-      <div class="client">
-        <img src="IMG/isis.jpg" alt="tapa">
-      </div>
-       
-
-      <!-- Adicione mais clientes conforme necessário -->
-    </div>
-  </section>
-
-  <section class="hero">
-    <div class="container">
-      <div class="hero-header">
-        <h1>Conheça a B3</h1>
-        <p>Tour virtual</p>
-       
-      </div>
-      <div class="hero-content">
-
-        <div class="info">
-          <h2>
-              <a href="sobrenos.html" target="_blank" class="info-link">
-               B3 Ambientes Corporativos… somos uma empresa pernambucana, formada por profissionais com mais de 20 anos de experiência no mercado de móveis. Nos dedicamos a oferecer soluções eficientes em mobiliário corporativo, com inovação, agilidade, qualidade e preço justo. Possuímos uma extensa linha de produtos de qualidade, que nos permite proporcionar soluções para seu negócio.
-              </a>
-          </h2>
-      </div>
-      
-        <iframe class="mapa"
-          src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1724446252075!5m2!1spt-BR!2sbr!6m8!1m7!1sCAoSLEFGMVFpcE9ocmZKcjVuRUFyU2EwZ0lwOEp5SHNmbXg1dEVkRURQWHM3Znkw!2m2!1d-8.0959410303665!2d-34.885025353839!3f1.205817113802766!4f-41.63084711729578!5f0.7820865974627469"
-          width="100%" height="500" style="border: 0" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-      
-      </div><!-- 
-      <div class="instagram">
-        <a href="https://www.instagram.com/b3corporativos/">
-          <img src="https://www.instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png"
-            alt="Instagram Logo" />
-          <h3>Visite nosso Instagram</h3>
+        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
         </a>
-      </div> -->
-    </div>
-  </section>
+        <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próxima</span>
+        </a>
+      </div>
+    </section>
 
+    <section class="produtos">
+        <div class="section-title">
+            <div class="retangulo"></div>
+            <h1>Alguns dos Nossos Produtos</h1>
+            <div class="retangulo"></div>
+        </div>
+        <div id="productCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-6 col-md-3 mb-4">
+                            <a href="#" class="product-category-card">
+                                <img src="IMG/Cadeira Alles.jpg" alt="Cadeira Alles">
+                                <h5>Cadeira Alles</h5>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                             <a href="#" class="product-category-card">
+                                <img src="IMG/cadeira office mona.jpg" alt="Cadeira Office Mona">
+                                <h5>Cadeira Office Mona</h5>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                             <a href="#" class="product-category-card">
+                                <img src="IMG/cadeira addit.jpg" alt="Cadeira Addit">
+                                <h5>Cadeira Addit</h5>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                            <a href="#" class="product-category-card">
+                                <img src="IMG/CADEIRA OFFICE OSLO RODÍZIO CARAMELO COM MOLAS.jpg" alt="Cadeira Office OSLO">
+                                <h5>Cadeira Office OSLO</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-6 col-md-3 mb-4">
+                            <a href="#" class="product-category-card">
+                                <img src="IMG/mesa de reunião.jpeg" alt="Mesa de Reunião">
+                                <h5>Mesa de Reunião</h5>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                            <a href="#" class="product-category-card">
+                                <img src="IMG/cabine acustica.jpeg" alt="Cabine Acústica">
+                                <h5>Cabine Acústica</h5>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                            <a href="#" class="product-category-card">
+                                <img src="IMG/estante.jpeg" alt="Estante Corporativa">
+                                <h5>Estante Corporativa</h5>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-3 mb-4">
+                            <a href="#" class="product-category-card">
+                                <img src="IMG/decoração completa.jpeg" alt="Decoração Corporativa">
+                                <h5>Decoração</h5>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#productCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#productCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="clients-section" id="clientes">
+      <div class="section-title">
+        <div class="retangulo"></div>
+        <h1>Nossos Clientes</h1>
+        <div class="retangulo"></div>
+      </div>
+      <div class="clients-container">
+        <div class="client"><img src="IMG/sebrae.png" alt="Logo Sebrae"></div>
+        <div class="client"><img src="IMG/unileaver.png" alt="Logo Unilever"></div>
+        <div class="client"><img src="IMG/bosh.png" alt="Logo Bosch"></div>
+        <div class="client"><img src="IMG/basf.png" alt="Logo Basf"></div>
+        <div class="client"><img src="IMG/vivix.jpg" alt="Logo Vivix"></div>
+        <div class="client"><img src="IMG/oab.jpg" alt="Logo OAB"></div>
+        <div class="client"><img src="IMG/seara.png" alt="Logo Seara"></div>
+        <div class="client"><img src="IMG/dnata.jpg" alt="Logo Dnata"></div>
+        <div class="client"><img src="IMG/medical.jpg" alt="Logo Medical"></div>
+        <div class="client"><img src="IMG/tapa.png" alt="Logo Tapa de Cuadril"></div>
+        <div class="client"><img src="IMG/ciafit.jpg" alt="Logo Ciafit"></div>
+        <div class="client"><img src="IMG/tolive.jpg" alt="Logo To Live"></div>
+        <div class="client"><img src="IMG/ocapora.jpg" alt="Logo Ocaporã"></div>
+        <div class="client"><img src="IMG/fps.jpg" alt="Logo FPS"></div>
+        <div class="client"><img src="IMG/ruffo.jpg" alt="Logo Ruffo"></div>
+        <div class="client"><img src="IMG/betesport.png" alt="Logo Betesport"></div>
+        <div class="client"><img src="IMG/solb.jpg" alt="Logo Solb"></div>
+        <div class="client"><img src="IMG/isis.jpg" alt="Logo Isis"></div>
+      </div>
+    </section>
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-header">
+          <h1>Conheça a B3</h1>
+          <p>Tour virtual</p>
+        </div>
+        <div class="hero-content">
+          <div class="info">
+            <h2>
+              <a href="sobrenos.html" class="info-link">
+                B3 Ambientes Corporativos… somos uma empresa pernambucana, formada por profissionais com mais de 20 anos de experiência no mercado de móveis. Nos dedicamos a oferecer soluções eficientes em mobiliário corporativo, com inovação, agilidade, qualidade e preço justo.
+              </a>
+            </h2>
+          </div>
+          <iframe class="mapa" title="Tour Virtual da B3 Ambientes Corporativos" src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1724446252075!5m2!1spt-BR!2sbr!6m8!1m7!1sCAoSLEFGMVFpcE9ocmZKcjVuRUFyU2EwZ0lwOEp5SHNmbXg1dEVkRURQWHM3Znkw!2m2!1d-8.0959410303665!2d-34.885025353839!3f1.205817113802766!4f-41.63084711729578!5f0.7820865974627469" width="100%" height="500" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
-    
-  <section class="redes">
-    <a href="https://wa.me/c/558189198675 " target="_blank">
-        <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=0a3a58" alt="WhatsApp" class="icon">WhatsApp
-    </a>
-
-    <a href="https://www.instagram.com/b3corporativos/" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/0a3a58/instagram-new.png" alt="Instagram" class="icon">b3corporativos
-    </a>
-
-    <a href="tel:+5581989198675" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/0a3a58/phone.png" alt="Telefone" class="icon">(81) 4102.0102 
-    </a>
-
-    <a href="#horarios" target="_self">
-        <img src="https://img.icons8.com/ios-filled/50/0a3a58/clock.png" alt="Horário de Funcionamento" class="icon">Segunda - Sexta 9:00 - 18:00 | Sábado 9:00 - 13:00
-    </a>
-</section>
-
+    <section class="redes">
+      <a href="https://wa.me/c/558189198675" target="_blank" rel="noopener"><img src="https://img.icons8.com/?size=100&id=16733&format=png&color=0a3a58" alt="WhatsApp" class="icon">WhatsApp</a>
+      <a href="https://www.instagram.com/b3corporativos/" target="_blank" rel="noopener"><img src="https://img.icons8.com/ios-filled/50/0a3a58/instagram-new.png" alt="Instagram" class="icon">b3corporativos</a>
+      <a href="tel:+5581989198675"><img src="https://img.icons8.com/ios-filled/50/0a3a58/phone.png" alt="Telefone" class="icon">(81) 4102-0102</a>
+      <a href="#"><img src="https://img.icons8.com/ios-filled/50/0a3a58/clock.png" alt="Horário de Funcionamento" class="icon">Segunda - Sexta 9:00 - 18:00 | Sábado 9:00 - 13:00</a>
+    </section>
     <div class="container">
-      <p>
-        &copy; 2024 B3 Ambientes Corporativos. Todos os direitos reservados.
-      </p>
+      <p>&copy; 2025 B3 Ambientes Corporativos. Todos os direitos reservados.</p>
     </div>
   </footer>
+
+  <div class="whatsapp-icon">
+    <a href="https://wa.me/c/558189198675" target="_blank" rel="noopener">
+      <img src="IMG/whatsappgif.gif" alt="Ícone flutuante do WhatsApp" />
+    </a>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <script>
+    // Script para efeito de encolher/expandir header ao rolar a página
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector("header");
+      if (window.scrollY > 50) {
+        header.classList.add("shrink");
+      } else {
+        header.classList.remove("shrink");
+      }
+    });
+
+    // Script para ocultar/mostrar a barra superior ao rolar a página
+    let lastScrollTop = 0;
+    window.addEventListener("scroll", () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      const body = document.body;
+
+      if (scrollTop > lastScrollTop && scrollTop > 50) {
+        // Rolando para baixo
+        body.classList.add("scrolling-down");
+        body.classList.remove("scrolling-up");
+      } else {
+        // Rolando para cima
+        body.classList.add("scrolling-up");
+        body.classList.remove("scrolling-down");
+      }
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+  </script>
+
 </body>
-
-<!-- jQuery (necessário para o Bootstrap JavaScript) -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="/script.js"></script>
-
-<script>
-  const header = document.querySelector("header");
-
-  window.addEventListener("scroll", function () {
-    if (window.scrollY > 50) {
-      header.classList.add("shrink");
-    } else {
-      header.classList.remove("shrink");
-    }
-  });
-</script>
-
-<script>
-  const topBar = document.querySelector(".top");
-  let lastScroll = 0;
-
-  window.addEventListener("scroll", () => {
-    let currentScroll = window.scrollY;
-
-    if (currentScroll > lastScroll && currentScroll > 50) {
-      // Rolando para baixo
-      topBar.classList.add("hide");
-    } else {
-      // Rolando para cima
-      topBar.classList.remove("hide");
-    }
-
-    lastScroll = currentScroll;
-  });
-</script>
-
-
-
 </html>
