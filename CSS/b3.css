@@ -128,3 +128,8 @@ footer .redes { margin-bottom: 15px; display: flex; justify-content: center; ali
     margin-top: 0; /* Remove a margem padrão para não piscar */
   }
 }
+footer .redes .icon {
+  width: 20px; /* Mude este valor para o que desejar */
+  height: 20px; /* Mude este valor para o que desejar */
+  vertical-align: middle;
+}
