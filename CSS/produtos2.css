@@ -68,8 +68,8 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 .cta-button-secondary:hover { background-color: var(--primary-color); color: var(--white-color); }
 
 .clients { padding: 80px 0; background-color: var(--light-gray-color); }
-.clients-swiper img { max-width: 140px; height: auto; filter: grayscale(100%); opacity: 0.6; transition: all 0.3s ease; }
-.clients-swiper img:hover { filter: grayscale(0%); opacity: 1; }
+.clients-swiper img { max-width: 140px; height: auto; transition: all 0.3s ease; }
+.clients-swiper img:hover { filter: grayscale(0%); opacity: 1; transform: scale(1.05); }
 .clients-swiper .swiper-slide {
     display: flex;
     justify-content: center; /* Alinha horizontalmente no centro */
@@ -77,8 +77,24 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
     height: 100px;         /* Define uma altura padrão para todos os slides */
 }
 
-.footer { background-color: var(--dark-color); color: var(--light-gray-color); padding: 30px 0; text-align: center; }
-/* DEPOIS (CÓDIGO CORRIGIDO) */
+.footer {
+    background-color: #134a75; /* Azul mais suave que o do header */
+    color: #ffffff;            /* Texto branco */
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: #ffffff;            /* Links sempre brancos */
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer a:hover {
+    color: #ffffff;            /* Mantém branco ao passar o mouse */
+}
+
+
 .whatsapp-icon {
     position: fixed;
     bottom: 25px; /* Mais espaço da borda */
@@ -159,5 +175,78 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 @media (max-width: 768px) {
     .cases-grid {
         grid-template-columns: 1fr; /* Transforma em uma única coluna */
+    }
+}
+
+/* --- ESTILO PARA A SEÇÃO DE AVALIAÇÕES --- */
+
+.reviews {
+    padding: 80px 0;
+    background-color: var(--light-gray-color);
+}
+
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.review-card {
+    background-color: var(--white-color);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    display: flex;
+    flex-direction: column;
+}
+
+.review-stars {
+    margin-bottom: 20px;
+    color: #FFC107; /* Cor de estrela do Google */
+    font-size: 1.2rem;
+}
+
+.review-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #555;
+    flex-grow: 1; /* Empurra o autor para a base */
+    margin-bottom: 25px;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: auto; /* Garante que o autor fique na base */
+}
+
+.review-author img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.author-info strong {
+    display: block;
+    font-weight: 700;
+}
+
+.author-info span {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Responsividade para a seção de avaliações */
+@media (max-width: 992px) {
+    .reviews-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
     }
 }

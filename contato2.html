@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - B3 Ambientes Corporativos</title>
+    <link rel="stylesheet" href="contato2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="IMG/Logob3.png" alt="Logo B3 Ambientes Corporativos" />
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="sobrenos.html">Sobre nós</a></li>
+                    <li class="dropdown">
+                        <a href="produtos.html">Produtos <i class="ph ph-caret-down"></i></a>
+                        <div class="dropdown-menu">
+                             <a href="#"><img class="product-icon" src="https://img.icons8.com/?size=100&id=25289&format=png&color=000000" /> Poltronas</a>
+                             <a href="#"><img class="product-icon" src="https://img.icons8.com/ios/50/office-chair-2.png" /> Cadeiras</a>
+                             <a href="#"><img class="product-icon" src="https://img.icons8.com/ios/50/table.png" /> Mobiliário</a>
+                        </div>
+                    </li>
+                    <li><a href="parceiros.html">Club&Casa</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="https://wa.me/c/558189198675" target="_blank" class="contact-button">Orçamento</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h2 data-aos="fade-up">Entre em Contato</h2>
+                <div class="contact-grid">
+                    <div class="contact-info" data-aos="fade-right">
+                        <div class="info-item">
+                            <i class="ph ph-map-pin"></i>
+                            <div>
+                                <strong>Nosso Endereço</strong>
+                                <p>Av. Conselheiro Aguiar, 1234, Boa Viagem, Recife - PE</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="ph ph-phone"></i>
+                            <div>
+                                <strong>Telefone & WhatsApp</strong>
+                                <p>(81) 4102-0102</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i class="ph ph-envelope"></i>
+                            <div>
+                                <strong>E-mail para Contato</strong>
+                                <p>contato@b3ambientes.com.br</p>
+                            </div>
+                        </div>
+                        <div class="map-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.395725734199!2d-34.88795568522013!3d-8.06109919419572!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab18a47112095b%3A0x323344de81177861!2sMarco%20Zero%2C%20Recife%20-%20PE%2C%2050030-903!5e0!3m2!1spt-BR!2sbr!4v1668023773010!5m2!1spt-BR!2sbr" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="contact-form" data-aos="fade-left">
+                        <h3>Envie sua mensagem</h3>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            
+                            <input type="hidden" name="access_key" value="SUA_CHAVE_DE_ACESSO_AQUI">
+
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="(81) 99999-8888" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <input type="text" id="subject" name="subject" placeholder="Ex: Orçamento de Cadeiras" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Sua Mensagem</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                            </div>
+
+                            <input type="hidden" name="redirect" value="https://SEU-SITE.COM/sucesso.html">
+
+                            <button type="submit" class="cta-button form-button">Enviar Mensagem</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 B3 Ambientes Corporativos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/c/558189198675" target="_blank" class="whatsapp-icon">
+        <img src="IMG/whatsappgif.gif" alt="Ícone flutuante do WhatsApp" />
+    </a>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="scripts2.js"></script>
+</body>
+</html>
