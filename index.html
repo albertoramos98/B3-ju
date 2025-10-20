@@ -6,6 +6,7 @@
     <title>B3 Ambientes Corporativos</title>
     <link rel="stylesheet" href="contato2.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
@@ -21,9 +22,9 @@
                     <li class="dropdown">
                         <a href="produtos.html">Produtos <i class="ph ph-caret-down"></i></a>
                         <div class="dropdown-menu">
-                             <a href="poltrona.html"><img class="product-icon" src="https://img.icons8.com/?size=100&id=25289&format=png&color=000000" /> Poltronas</a>
-                             <a href="cadeiras.html"><img class="product-icon" src="https://img.icons8.com/ios/50/office-chair-2.png" /> Cadeiras</a>
-                             <a href="mobiliario.html"><img class="product-icon" src="https://img.icons8.com/ios/50/table.png" /> Mobiliário</a>
+                             <a href="#"><img class="product-icon" src="https://img.icons8.com/?size=100&id=25289&format=png&color=000000" /> Poltronas</a>
+                             <a href="#"><img class="product-icon" src="https://img.icons8.com/ios/50/office-chair-2.png" /> Cadeiras</a>
+                             <a href="#"><img class="product-icon" src="https://img.icons8.com/ios/50/table.png" /> Mobiliário</a>
                         </div>
                     </li>
                     <li><a href="parceiros.html">Club&Casa</a></li>
@@ -32,185 +33,110 @@
             </nav>
             <div class="header-right">
                 <a href="https://wa.me/c/558189198675" target="_blank" class="contact-button">Solicite seu Orçamento</a>
-                <button class="mobile-menu-icon" id="mobile-menu-button">
-                    <i class="ph ph-list"></i>
-                </button>
             </div>
         </div>
     </header>
 
-    <div class="mobile-nav" id="mobile-nav">
-        <ul>
-            <li><a href="sobrenos.html">Sobre nós</a></li>
-            <li><a href="produtos.html">Produtos</a></li>
-            <li><a href="parceiros.html">Club&Casa</a></li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </div>
-
     <main>
-        <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('IMG/b3carrocel.jpeg');">
-            <div class="container">
-                <h1>Soluções Completas para Ambientes Corporativos</h1>
-                <p>Inovação, agilidade e qualidade para transformar o seu espaço de trabalho.</p>
-                <a href="#produtos" class="cta-button">Conheça Nossas Soluções</a>
+        <!-- HERO -->
+        <section class="hero-section">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide hero-slide" style="background-image: url('IMG/b3carrocel.jpeg');">
+                        <div class="hero-content" data-aos="fade-up">
+                            <h1>Soluções Completas para Ambientes Corporativos</h1>
+                            <p>Inovação, agilidade e qualidade para transformar o seu espaço de trabalho.</p>
+                            <a href="#produtos" class="cta-button">Conheça Nossas Soluções</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hero-slide" style="background-image: url('IMG/banner 2.jpeg');">
+                        <div class="hero-content">
+                            <h1>Design que Inspira Produtividade</h1>
+                            <p>Criamos projetos que unem estética, conforto e funcionalidade.</p>
+                            <a href="contato2.html" class="cta-button">Fale com um Especialista</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hero-slide" style="background-image: url('IMG/banner3.jpeg');">
+                        <div class="hero-content">
+                            <h1>Mobiliário Sob Medida para Sua Empresa</h1>
+                            <p>Do planejamento à entrega, cuidamos de cada detalhe para você.</p>
+                            <a href="#cases" class="cta-button">Veja Nossos Cases</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next hero-next"></div>
+                <div class="swiper-button-prev hero-prev"></div>
+                <div class="swiper-pagination hero-pagination"></div>
             </div>
         </section>
 
+        <!-- DIFERENCIAIS -->
         <section class="features">
-            <div class="container">
-                <h2>Nossos Diferenciais</h2>
-                <div class="features-grid">
-                    <div class="feature-card"><i class="ph ph-sketch-logo"></i><h3>Design Inovador</h3><p>Projetos que unem estética e funcionalidade.</p></div>
-                    <div class="feature-card"><i class="ph ph-check-circle"></i><h3>Qualidade Garantida</h3><p>Mobiliário com alta durabilidade e acabamento.</p></div>
-                    <div class="feature-card"><i class="ph ph-handshake"></i><h3>Atendimento Personalizado</h3><p>Acompanhamos seu projeto do início ao fim.</p></div>
-                </div>
-            </div>
+             <div class="container">
+                 <h2 data-aos="fade-up">Nossos Diferenciais</h2>
+                 <div class="features-grid">
+                     <div class="feature-card" data-aos="fade-up" data-aos-delay="100"><i class="ph ph-sketch-logo"></i><h3>Design Inovador</h3><p>Projetos que unem estética e funcionalidade.</p></div>
+                     <div class="feature-card" data-aos="fade-up" data-aos-delay="200"><i class="ph ph-check-circle"></i><h3>Qualidade Garantida</h3><p>Mobiliário com alta durabilidade e acabamento.</p></div>
+                     <div class="feature-card" data-aos="fade-up" data-aos-delay="300"><i class="ph ph-handshake"></i><h3>Atendimento Personalizado</h3><p>Acompanhamos seu projeto do início ao fim.</p></div>
+                 </div>
+             </div>
         </section>
+        
+        <!-- PRODUTOS -->
         <section class="products" id="produtos">
-          <div class="container">
-              <h2>Alguns dos Nossos Produtos</h2>
-              <div class="swiper product-swiper">
-                  <div class="swiper-wrapper">
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/Cadeira Alles.jpg" alt="Cadeira Alles"><h3>Cadeira Alles</h3><p>Conforto e ergonomia</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/cadeira office mona.jpg" alt="Cadeira Office Mona"><h3>Cadeira Office Mona</h3><p>Design executivo</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/cadeira addit.jpg" alt="Cadeira Addit"><h3>Cadeira Addit</h3><p>Versatilidade e estilo</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/CADEIRA OFFICE OSLO RODÍZIO CARAMELO COM MOLAS.jpg" alt="Cadeira Office OSLO"><h3>Cadeira Office OSLO</h3><p>Acabamento premium</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/CADEIRA BERGEN ALTA BRANCA.jpg" alt="Mesa de Reunião"><h3>Cadeira BERGEN</h3><p>Cadeira BERGEN</p></a></div>
-                      
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/gabinetto 5.jpg" alt="Cabine Acústica"><h3>Sofá gabinetto</h3><p>Foco e privacidade</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/gabinetto 4.jpg" alt="Estante Corporativa"><h3>Sofá gabinetto</h3><p>Organização e design</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/gabinetto3.png" alt="Decoração Corporativa"><h3>Decoração Completa</h3><p>Projetos completos</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/gabinetto 2.jpg" alt="Poltrona Minimalista"><h3>Poltrona Minimalista</h3><p>Linhas puras e conforto</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/gabinetto.JPG" alt="Sofá Lounge"><h3>Sofá Lounge Union</h3><p>Para áreas de descompressão</p></a></div>
-      
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/estação.png" alt="Cadeira Aura"><h3>estação de trabalho</h3><p>Design e leveza</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/estação1 (1).png" alt="Conjunto de Jantar"><h3>estação de trabalho</h3><p>Refeições com estilo</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/estação1 (2).png" alt="Banqueta Alta"><h3>estação de trabalho</h3><p>Ideal para áreas de café</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/estação1 (3).jpg" alt="Poltrona Shell"><h3>estação de trabalho</h3><p>Conforto e sofisticação</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/estação 4.png" alt="Banco de Madeira"><h3>estação de trabalho</h3><p>Toque natural ao ambiente</p></a></div>
-      
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/frizokar.jpg" alt="Mesa de Apoio"><h3>Divisoria</h3><p>Praticidade e design</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/frizokar2.jpg" alt="Balcão de Atendimento"><h3>Divisoria</h3><p>A recepção do seu negócio</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/frizokar 3.jpg" alt="Sofá Clássico"><h3>Divisoria</h3><p>Elegância atemporal</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/frizokar 4.jpg" alt="Estação de Trabalho"><h3>Divisoria</h3><p>Foco na produtividade</p></a></div>
-                      <div class="swiper-slide product-card"><a href="#"><img src="IMG/frizokar 5.jpg" alt="Bancada de Mármore"><h3>Divisoria</h3><p>Sofisticação e durabilidade</p></a></div>
-                  </div>
-                  <div class="swiper-pagination"></div>
-              </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
-          </div>
-      </section>
-      <section class="cases">
-        <div class="container">
-            <h2>Cases de Sucesso</h2>
-            <div class="cases-grid">
-                <a href="#" class="case-card">
-                    <img src="IMG/case.jpg" alt="Projeto de escritório para startup de tecnologia">
-                    <div class="case-info">
-                        <h3>Oralcadodontologia</h3>
-                        <p>Projeto completo de mobiliário e acústica para um ambiente de alta performance e colaboração.</p>
-                    </div>
-                </a>
-                <a href="#" class="case-card">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070" alt="Projeto de escritório de advocacia">
-                    <div class="case-info">
-                        
-                        <h3>Escritório Jurídico & Advogados</h3>
-                        <p>Renovação de ambiente com foco em sobriedade, modernidade e conforto para clientes.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-        
-        <section class="about">
-             <div class="container about-flex">
-                <div class="about-image">
-                    <iframe title="Tour Virtual da B3" src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1724446252075!5m2!1spt-BR!2sbr!6m8!1m7!1sCAoSLEFGMVFpcE9ocmZKcjVuRUFyU2EwZ0lwOEp5SHNmbXg1dEVkRURQWHM3Znkw!2m2!1d-8.0959410303665!2d-34.885025353839!3f1.205817113802766!4f-41.63084711729578!5f0.7820865974627469" allowfullscreen="" loading="lazy"></iframe>
-                </div>
-                <div class="about-text">
-                    <h2>Mais de 20 anos de experiência a sua disposição</h2>
-                    <p>Somos uma empresa pernambucana dedicada a oferecer soluções eficientes em mobiliário corporativo, com inovação, agilidade, qualidade e preço justo.</p>
-                    <a href="sobrenos.html" class="cta-button-secondary">Nossa História</a>
-                </div>
-            </div>
-        </section>
-        <section class="reviews">
             <div class="container">
-                <h2 data-aos="fade-up">O que nossos clientes dizem</h2>
-                <div class="reviews-grid">
-        
-                    <div class="review-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="review-stars">
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <div class="review-author">
-                                <img src="IMG/nara campos.png" alt="Foto do cliente">
-                                <div class="author-info">
-                                    <strong>Nara Campos</strong>
-                                    <span>Avaliação do Google</span>
-                                </div>
-                        </div>
-                        <p class="review-text">"Fiquei super satisfeita com minhas compras na Loja B3, da Conselheiro Aguiar!
-                            As cadeiras de escritório têm ótimo acabamento, são confortáveis e a entrega das que comprei por encomenda foram entregues dentro do prazo. Recomendo demais! 🙌🪑
-                            O ambiente de trabalho no meu escritório ficou ainda mais bonito."</p>
-                    
-                        </div>
+                <h2 data-aos="fade-up">Alguns dos Nossos Produtos</h2>
+                <div class="swiper product-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/Cadeira Alles.jpg" alt="Cadeira Alles"><h3>Cadeira Alles</h3><p>Conforto e ergonomia</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/cadeira office mona.jpg" alt="Cadeira Office Mona"><h3>Cadeira Office Mona</h3><p>Design executivo</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/cadeira addit.jpg" alt="Cadeira Addit"><h3>Cadeira Addit</h3><p>Versatilidade e estilo</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/CADEIRA OFFICE OSLO RODÍZIO CARAMELO COM MOLAS.jpg" alt="Cadeira Office OSLO"><h3>Cadeira Office OSLO</h3><p>Acabamento premium</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/CADEIRA BERGEN ALTA BRANCA.jpg" alt="Cadeira BERGEN"><h3>Cadeira BERGEN</h3><p>Cadeira BERGEN</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/gabinetto 5.jpg" alt="Sofá gabinetto"><h3>Sofá gabinetto</h3><p>Foco e privacidade</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/gabinetto 4.jpg" alt="Sofá gabinetto"><h3>Sofá gabinetto</h3><p>Organização e design</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/gabinetto3.png" alt="Decoração Corporativa"><h3>Decoração Completa</h3><p>Projetos completos</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/gabinetto 2.jpg" alt="Poltrona Minimalista"><h3>Poltrona Minimalista</h3><p>Linhas puras e conforto</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/gabinetto.JPG" alt="Sofá Lounge"><h3>Sofá Lounge Union</h3><p>Para áreas de descompressão</p></a></div>
                     </div>
+                    <div class="swiper-pagination product-pagination"></div>
+                    <div class="swiper-button-next product-next"></div>
+                    <div class="swiper-button-prev product-prev"></div>
+                </div>
+            </div>
+        </section>
         
-                    <div class="review-card" data-aos="fade-up" data-aos-delay="200">
-                        <div class="review-stars">
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
+        <!-- CASES -->
+        <section class="cases" id="cases">
+            <div class="container">
+                <h2 data-aos="fade-up">Cases de Sucesso</h2>
+                <div class="cases-grid">
+                    <a href="#" class="case-card" data-aos="fade-up" data-aos-delay="100">
+                        <img src="IMG/case.jpg" alt="Projeto Oralcadodontologia">
+                        <div class="case-info">
+                            <h3>Oralcadodontologia</h3>
+                            <p>Projeto completo de mobiliário e acústica para um ambiente de alta performance.</p>
                         </div>
-                        <img src="IMG/mari coutinho.png" alt="Foto do cliente">
-                         <div class="author-info">
-                           
-                            <strong>Mari Coutinho</strong>
-                            <span>Avaliação do Google</span>
+                    </a>
+                    <a href="#" class="case-card" data-aos="fade-up" data-aos-delay="200">
+                        <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?q=80&w=2070" alt="Projeto de escritório de advocacia">
+                        <div class="case-info">
+                            <h3>Escritório Jurídico & Advogados</h3>
+                            <p>Renovação de ambiente com foco em sobriedade, modernidade e conforto.</p>
                         </div>
-                        <p class="review-text">"Atendimento muito bom, super prestativa e atenciosa, os produtos são maravilhosos de qualidade e com um preço incrivel."</p>
-                        <div class="review-author">
-                       
-                           
-                        </div>
-                    </div>
-        
-                    <div class="review-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="review-stars">
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                            <i class="ph-fill ph-star"></i>
-                        </div>
-                        
-                        <div class="review-author">
-                            <img src="IMG/andrea alves.png" alt="Foto do cliente">
-                            <div class="author-info">
-                                <strong>Andrea Alves</strong>
-                                <span>Avaliação do Google</span>
-
-                            </div>
-                            <p class="review-text">"Empresa séria, cumpre prazos e excelentes preços."</p>
-                        </div>
-                    </div>
-                    
+                    </a>
                 </div>
             </div>
         </section>
 
+        <!-- CLIENTES -->
         <section class="clients" id="clientes">
             <div class="container">
-                 <h2>Alguns dos Nossos Clientes</h2>
+                <h2 data-aos="fade-up">Alguns dos Nossos Clientes</h2>
                 <div class="swiper clients-swiper">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide"><img src="IMG/sebrae.png" alt="Logo Sebrae"></div>
@@ -221,28 +147,15 @@
                         <div class="swiper-slide"><img src="IMG/oab.jpg" alt="Logo OAB"></div>
                         <div class="swiper-slide"><img src="IMG/seara.png" alt="Logo Seara"></div>
                         <div class="swiper-slide"><img src="IMG/dnata.jpg" alt="Logo Dnata"></div>
-                        <div class="swiper-slide"><img src="IMG/medical.jpg" alt="Logo Medical"></div>
-                        <div class="swiper-slide"><img src="IMG/tapa.png" alt="Logo Tapa de Cuadril"></div>
-                        <div class="swiper-slide"><img src="IMG/ciafit.jpg" alt="Logo Ciafit"></div>
-                        <div class="swiper-slide"><img src="IMG/maxplural.jpeg" alt="Logo Max Plural"></div>
-                        <div class="swiper-slide"><img src="IMG/virtua.jpeg" alt="Logo virtua"></div>
-                        <div class="swiper-slide"><img src="IMG/betesport.png" alt="betesport"></div>
-                        <div class="swiper-slide"><img src="IMG/cia.png" alt="Logo cia"></div>
-                        <div class="swiper-slide"><img src="IMG/country.png" alt="Logo country"></div>
-                        <div class="swiper-slide"><img src="IMG/tolive.jpg" alt="Logo tolive"></div>
-                        <div class="swiper-slide"><img src="IMG/isis.jpg" alt="Logo isis"></div>
-                        <div class="swiper-slide"><img src="IMG/fps.jpg" alt="Logo fps"></div>
-                        <div class="swiper-slide"><img src="IMG/suvinil.png" alt="Logo Suvinil"></div>
-
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    
     <footer class="footer">
         <div class="container">
-          <a href="https://maps.app.goo.gl/qhvMyEn4xpFAwSA89" class="cta-button-secondary">Av. Conselheiro Aguiar, 642 - Pina - Recife - Pernambuco - CEP: 51.011-030</a>
-          
+            <a href="https://maps.app.goo.gl/qhvMyEn4xpFAwSA89" class="cta-button-secondary">Av. Conselheiro Aguiar, 642 - Pina - Recife - Pernambuco - CEP: 51.011-030</a>
         </div>
     </footer>
 
@@ -251,6 +164,7 @@
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
     <script src="scripts2.js"></script>
 </body>
 </html>
