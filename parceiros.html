@@ -1,126 +1,111 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>B3 Ambientes Corporativos</title>
-  <link rel="stylesheet" href="CSS/clubcasa.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parceria Club&Casa - B3 Ambientes Corporativos</title>
+    <link rel="stylesheet" href="CSS/clubcasa.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-
 <body>
-  <header class="d-flex justify-content-center">
-    <nav class="navbar navbar-expand-lg navbar">
-      <a class="navbar-brand" href="index.html">
-        <img src="IMG/Logob3.png" alt="Logo B3 Ambientes Corporativos" class="logo" />
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
 
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="d-md-flex d-block">
-          <li class="menu-item"><a href="sobrenos.html">Sobre nós</a></li>
-          <li class="menu-item">
-            <a href="produtos.html">Produtos</a>
-            <ul class="dropdown">
-              <li class="menu-item">
-                <a href="poltrona.html"><img class="product-image" src="https://img.icons8.com/?size=100&id=25289&format=png&color=000000" alt="Poltronas" /> Poltronas</a>
-              </li>
-              <li class="menu-item">
-                <a href="cadeiras.html"><img class="product-image" src="https://img.icons8.com/ios/50/office-chair-2.png" alt="Cadeiras" /> Cadeiras</a>
-                <ul class="sub-dropdown">
-                  <li><a href="cadeiras.html">- Office</a></li>
-                  <li><a href="Multifuncionais.html">- Multifuncionais</a></li>
-                  <li><a href="decor.html">- Decor</a></li>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="IMG/Logob3.png" alt="Logo B3 Ambientes Corporativos" />
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="sobrenos.html">Sobre nós</a></li>
+                    <li class="dropdown">
+                        <a href="produtos.html">Produtos <i class="ph ph-caret-down"></i></a>
+                        <div class="dropdown-menu">
+                             <a href="#"><img class="product-icon" src="https://img.icons8.com/?size=100&id=25289&format=png&color=000000" /> Poltronas</a>
+                             <a href="#"><img class="product-icon" src="https://img.icons8.com/ios/50/office-chair-2.png" /> Cadeiras</a>
+                             <a href="#"><img class="product-icon" src="https://img.icons8.com/ios/50/table.png" /> Mobiliário</a>
+                        </div>
+                    </li>
+                    <li><a href="parceiros.html">Club&Casa</a></li> <li><a href="contato2.html">Contato</a></li>
                 </ul>
-              </li>
-              <li><a href="mobiliario.html"><img class="product-image" src="https://img.icons8.com/ios/50/table.png" alt="Mobiliário" /> Mobiliário</a></li>
-              <li><a href="#"><img class="product-image" src="https://img.icons8.com/isometric-line/50/report-card.png" alt="Divisórias" /> Divisórias</a></li>
-              <li><a href="#"><img class="product-image" src="https://img.icons8.com/?size=100&id=11555&format=png&color=000000" alt="Acústicas" /> Acústicas</a></li>
-              <li class="menu-item"><a href="auditório.html"><img class="product-image" src="https://img.icons8.com/ios-filled/50/auditorium--v1.png" alt="Auditório" /> Auditório</a></li>
-              <li class="menu-item"><a href="puffs.html"><img class="product-image" src="https://img.icons8.com/puffy/32/sofa.png" alt="Puff" /> Puff</a></li>
-              <li><a href="sofá.html"><img class="product-image" src="https://img.icons8.com/?size=100&id=33796&format=png&color=000000" alt="Sofás" /> Sofás</a></li>
-              <li><a href="#"><img class="product-image" src="https://img.icons8.com/?size=100&id=11321&format=png&color=000000" alt="Escolar" /> Escolar</a></li>
-              <li><a href="#"><img class="product-image" src="https://img.icons8.com/?size=100&id=60612&format=png&color=000000" alt="Refeitório" /> Refeitório</a></li>
-              <li><a href="#"><img class="product-image" src="https://img.icons8.com/windows/32/ellipsis.png" alt="Outros" /> Outros</a></li>
-            </ul>
-          </li>
-          <li class="menu-item"><a href="parceiros.html">Club&Casa</a></li>
-          <li class="menu-item"><a href="https://drive.google.com/file/d/1OQqKCnvcf6vvEbHztaHXVQsgfnRhGKnw/view?usp=sharing">Catálogos</a></li>
-       
-        </ul>
-      </div>
-    </nav>
-  </header>
+            </nav>
+            <div class="header-right">
+                <a href="https://wa.me/c/558189198675" target="_blank" class="contact-button">Solicite seu Orçamento</a>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <section class="contact-section">
-      <div class="container">
-    
-
-        <section class="parceria-b3">
-         <div class="retangulo"></div>
-
-<div style="text-align: center; margin-bottom: 30px;">
-  <img src="https://clubecasadesign.com.br/images/dark_logo.png" alt="Logo Club&Casa" style="max-width: 200px; height: auto;">
-</div>
-
-<h4 style="text-align: center; color: #0a3a58;">B3 Parceira do Club&Casa Design</h4>
-
-<p style="text-align: center; max-width: 800px; margin: 0 auto;">
-  O Club&Casa Design é um clube de relacionamento que conecta os profissionais de arquitetura e design às melhores lojas do setor. Nosso objetivo é criar relacionamentos e conexões de valor para o mercado com um grupo seleto de lojas e profissionais por meio de eventos de conteúdo e de relacionamento, atendimento exclusivo e experiências únicas.
-</p>
-
-<p style="text-align: center; max-width: 800px; margin: 20px auto;">
-  Para engajar os relacionamentos e os negócios entre nossos associados, utilizamos um sistema de pontuação, em que cada novo negócio realizado entre nossos profissionais e lojistas gera uma pontuação.
-</p>
-
-<h4 style="text-align: center; margin-top: 40px; color: #0a3a58">COMO FUNCIONA</h4>
-
-<p style="text-align: center;">
-  Faça parte, gere negócios e tenha experiências incríveis.<br>
-  <a href="https://app.clubecasadesign.com.br/" target="_blank" style="color: #0077cc; text-decoration: none;">
-    Clique aqui para se cadastrar ou saber mais
-  </a>
-</p>
-
-</p>
-
+    <main>
+        <section class="page-title-section">
+            <div class="container" data-aos="fade-up">
+                <h1>Parceria B3 + Club&Casa Design</h1>
+            </div>
         </section>
-      </div>
-    </section>
-  </main>
 
-  <footer>
-    <section class="redes">
-      <a href="https://wa.me/message/JWIVEWQSBKEBP1" target="_blank">
-        <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=0a3a58" alt="WhatsApp" class="icon">WhatsApp
-      </a>
-      <a href="https://www.instagram.com/b3corporativos/" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/0a3a58/instagram-new.png" alt="Instagram" class="icon">@b3corporativos
-      </a>
-      <a href="tel:+5581989198675" target="_blank">
-        <img src="https://img.icons8.com/ios-filled/50/0a3a58/phone.png" alt="Telefone" class="icon">(81) 98919.8675 | (81) 99808.9299
-      </a>
-      <a href="#horarios" target="_self">
-        <img src="https://img.icons8.com/ios-filled/50/0a3a58/clock.png" alt="Horário de Funcionamento" class="icon">Segunda - Sexta 9:00 - 18:00 | Sábado 9:00 - 13:00
-      </a>
-    </section>
+        <section class="clubcasa-content">
+            <div class="container">
 
-    <div class="containerfooter">
-      <p>&copy; 2024 B3 Ambientes Corporativos. Todos os direitos reservados.</p>
-    </div>
-  </footer>
+                <div class="logo-parceiro" data-aos="fade-up">
+                    <img src="https://clubecasadesign.com.br/images/dark_logo.png" alt="Logo Club&Casa Design">
+                </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-</body>
+                <div class="texto-parceria" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="subtitulo-parceria">B3 é Loja Parceira Oficial</h2>
+                    <p>
+                        O Club&Casa Design é um clube de relacionamento exclusivo que conecta os melhores profissionais de arquitetura e design às lojas de maior destaque no setor. O objetivo é fortalecer o mercado, criando conexões valiosas através de eventos, conteúdo relevante, atendimento diferenciado e experiências únicas.
+                    </p>
+                    <p>
+                        Na B3 Ambientes Corporativos, valorizamos essa conexão. Cada negócio realizado entre profissionais associados e nossa loja gera pontuações no sistema do Club&Casa, incentivando relacionamentos duradouros e mutuamente benéficos.
+                    </p>
+                </div>
 
+                <div class="como-funciona" data-aos="fade-up" data-aos-delay="200">
+                    <h3>Como Funciona?</h3>
+                    <p>
+                        Faça parte deste grupo seleto, gere novos negócios e participe de experiências incríveis preparadas para você.
+                    </p>
+                    <a href="https://app.clubecasadesign.com.br/" target="_blank" class="cta-button-secondary">
+                        Cadastre-se ou Saiba Mais no Club&Casa
+                    </a>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+    
+          <section class="redes">
+            <a href="https://wa.me/message/JWIVEWQSBKEBP1" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=0a3a58" alt="WhatsApp" class="icon">WhatsApp
+            </a>
+        
+            <a href="https://www.instagram.com/b3corporativos/" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/0a3a58/instagram-new.png" alt="Instagram" class="icon">@b3corporativos
+            </a>
+        
+            <a href="tel:+5581989198675" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/0a3a58/phone.png" alt="Telefone" class="icon">(81) 98919.8675 
+            </a>
+        
+            <a href="#horarios" target="_self">
+                <img src="https://img.icons8.com/ios-filled/50/0a3a58/clock.png" alt="Horário de Funcionamento" class="icon">Segunda - Sexta 9:00 - 18:00 | Sábado 9:00 - 13:00
+            </a>
+        </section>
+        
+            <div class="container">
+              <p>
+                &copy; 2024 B3 Ambientes Corporativos. Todos os direitos reservados.
+              </p>
+            </div>
+          </footer>
+    </main>
+
+  
+    <a href="https://wa.me/c/558189198675" target="_blank" class="whatsapp-icon">
+        <img src="IMG/whatsappgif.gif" alt="Ícone flutuante do WhatsApp" />
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="scripts2.js"></script> </body>
 </html>

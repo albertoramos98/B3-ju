@@ -14,18 +14,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // PRODUTOS CAROUSEL
-    const productSwiper = new Swiper('.product-swiper', {
-        loop: true,
-        slidesPerView: 1,
-        spaceBetween: 20,
-        pagination: { el: '.product-pagination', clickable: true },
-        navigation: { nextEl: '.product-next', prevEl: '.product-prev' },
-        breakpoints: {
-            576: { slidesPerView: 2 },
-            768: { slidesPerView: 3 },
-            1200: { slidesPerView: 5, spaceBetween: 30 }
-        }
-    });
+const productSwiper = new Swiper('.product-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 20,
+    pagination: { el: '.product-pagination', clickable: true },
+    navigation: { nextEl: '.product-next', prevEl: '.product-prev' },
+    breakpoints: {
+        576: { slidesPerView: 2, slidesPerGroup: 2 },
+        768: { slidesPerView: 3, slidesPerGroup: 3 },
+        1200: { slidesPerView: 5, slidesPerGroup: 5, spaceBetween: 30 }
+    }
+});
 
     // CLIENTES CAROUSEL
     const clientsSwiper = new Swiper('.clients-swiper', {
