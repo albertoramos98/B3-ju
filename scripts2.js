@@ -46,29 +46,27 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
 
     // 3. CONTROLA O CARROSSEL DE PRODUTOS (WITH LOOP AND NO slidesPerGroup)
     const productSwiper = new Swiper('.product-swiper', {
-        loop: true, // Infinite loop enabled
+        loop: false, // <<< MUDANÇA: Loop desativado para slidesPerGroup funcionar melhor
         slidesPerView: 1,
-        // slidesPerGroup: 1, <-- REMOVED for smooth loop
         spaceBetween: 20,
-        pagination: { el: '.product-pagination', clickable: true }, // Your custom class
-        navigation: { nextEl: '.product-next', prevEl: '.product-prev' }, // Your custom class
+        pagination: { el: '.product-pagination', clickable: true }, 
+        navigation: { nextEl: '.product-next', prevEl: '.product-prev' }, 
         breakpoints: {
             576: {
                 slidesPerView: 2,
-                // slidesPerGroup: 2 <-- REMOVED
+                slidesPerGroup: 2 // <<< ADICIONADO DE VOLTA
             },
             768: {
                 slidesPerView: 3,
-                // slidesPerGroup: 3 <-- REMOVED
+                slidesPerGroup: 3 // <<< ADICIONADO DE VOLTA
             },
             1200: {
                 slidesPerView: 5,
-                // slidesPerGroup: 5 <-- REMOVED
+                slidesPerGroup: 5, // <<< ADICIONADO DE VOLTA
                 spaceBetween: 30
             }
         }
     });
-
     // 4. CONTROLA O CARROSSEL DE CLIENTES
     const clientsSwiper = new Swiper('.clients-swiper', {
         loop: true,
