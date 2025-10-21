@@ -1,67 +1,34 @@
-document.addEventListener('DOMContentLoaded', function() { // <-- TUDO TEM QUE ESTAR AQUI DENTRO
+document.addEventListener('DOMContentLoaded', function() {
 
-    // 1. INICIALIZA O AOS (ANIMAÇÕES AO ROLAR A PÁGINA)
     if (typeof AOS !== 'undefined') {
-        AOS.init({
-            duration: 1000,
-            once: true,
-        });
+        AOS.init({ duration: 1000, once: true });
     }
 
-    // 2. CONTROLA O CARROSSEL DE BANNERS DO TOPO (HERO)
-    // Usando os seletores corretos do seu código: .hero-pagination, .hero-next, .hero-prev
+    // HERO CAROUSEL
     const heroSwiper = new Swiper('.hero-swiper', {
         loop: true,
         effect: 'fade',
-        autoplay: {
-            delay: 5000,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: '.hero-pagination', // <<< CORRIGIDO
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.hero-next', // <<< CORRIGIDO
-            prevEl: '.hero-prev', // <<< CORRIGIDO
-        },
-        // Lógica para reiniciar a animação do texto
-        on: {
-            slideChangeTransitionStart: function () {
-                this.slides.forEach(slide => {
-                    const content = slide.querySelector('.hero-content');
-                    if (content) content.style.opacity = 0;
-                });
-            },
-            slideChangeTransitionEnd: function () {
-                const activeSlide = this.slides[this.activeIndex];
-                const content = activeSlide.querySelector('.hero-content');
-                if (content) {
-                    if (typeof AOS !== 'undefined') AOS.refreshHard();
-                    content.style.opacity = 1;
-                }
-            }
-        }
+        autoplay: { delay: 5000, disableOnInteraction: false },
+        pagination: { el: '.hero-pagination', clickable: true },
+        navigation: { nextEl: '.hero-next', prevEl: '.hero-prev' },
     });
 
-    // 3. CONTROLA O CARROSSEL DE PRODUTOS
-    // Usando os seletores corretos: .product-pagination, .product-next, .product-prev
-    // E removendo slidesPerGroup para loop perfeito
-    const productSwiper = new Swiper('.product-swiper', {
-        loop: true, 
-        slidesPerView: 1,
-        spaceBetween: 20,
-        pagination: { el: '.product-pagination', clickable: true }, // <<< CORRIGIDO
-        navigation: { nextEl: '.product-next', prevEl: '.product-prev' }, // <<< CORRIGIDO
-        breakpoints: {
-            576: { slidesPerView: 2 }, // slidesPerGroup removido
-            768: { slidesPerView: 3 }, // slidesPerGroup removido
-            1200: { slidesPerView: 5, spaceBetween: 30 } // slidesPerGroup removido
-        }
-    });
+    // PRODUTOS CAROUSEL
+const productSwiper = new Swiper('.product-swiper', {
+    loop: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    spaceBetween: 20,
+    pagination: { el: '.product-pagination', clickable: true },
+    navigation: { nextEl: '.product-next', prevEl: '.product-prev' },
+    breakpoints: {
+        576: { slidesPerView: 2, slidesPerGroup: 2 },
+        768: { slidesPerView: 3, slidesPerGroup: 3 },
+        1200: { slidesPerView: 5, slidesPerGroup: 5, spaceBetween: 30 }
+    }
+});
 
-    // 4. CONTROLA O CARROSSEL DE CLIENTES
-    // Assumindo que usa os seletores padrão ou não tem navegação/paginação específica
+    // CLIENTES CAROUSEL
     const clientsSwiper = new Swiper('.clients-swiper', {
         loop: true,
         slidesPerView: 3,
@@ -74,10 +41,13 @@ document.addEventListener('DOMContentLoaded', function() { // <-- TUDO TEM QUE E
         }
     });
 
-    // 5. CONTROLA O MENU MOBILE (AGORA DENTRO DO DOMContentLoaded)
+});
+
+// 5. CONTROLA O MENU MOBILE (ADICIONADO/REATIVADO)
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileNav = document.getElementById('mobile-nav');
 
+    // Verifica se os elementos existem antes de adicionar o listener
     if (mobileMenuButton && mobileNav) {
         mobileMenuButton.addEventListener('click', function() {
             // Alterna a exibição do painel do menu mobile
@@ -88,5 +58,3 @@ document.addEventListener('DOMContentLoaded', function() { // <-- TUDO TEM QUE E
             }
         });
     }
-
-}); // <-- FIM DO DOMContentLoaded
