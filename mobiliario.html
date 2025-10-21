@@ -1,74 +1,111 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sidebar com Bootstrap 5</title>
-  <!-- Link para o CSS do Bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Link para o CSS customizado -->
-  <link rel="stylesheet" href="CSS/mobiliario.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobiliário - B3 Ambientes Corporativos</title>
+    <link rel="stylesheet" href="contato2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-
 <body>
 
-  <div class="sidebar">
-    <h4>MOBILIÁRIO</h4>
-    <ul class="nav nav-underline flex-column">
-    
-
-      <li class="nav-item"></li>
-        <a class="nav-link" href="index.html">Inicio</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="content">
-    <h1>MOBILIÁRIO</h1>
-
-    <div class="container">
-      <div class="row">
-        <!-- Card 1 -->
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <img src="https://gabbinetto.com.br/wp-content/uploads/2024/04/FUNDO-BRANCO-02-500x500.png" class="card-img-top" alt="Card 1">
-            <div class="card-body">
-              <h5 class="card-title">Plataforma Elevatória Eleva</h5>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="IMG/Logob3.png" alt="Logo B3 Ambientes Corporativos" />
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="sobrenos.html">Sobre nós</a></li>
+                    <li class="dropdown">
+                        <a href="produtos.html">Produtos <i class="ph ph-caret-down"></i></a>
+                        <div class="dropdown-menu">
+                             <a href="poltrona.html"><img class="product-icon" src="https://img.icons8.com/?size=100&id=25289&format=png&color=000000" /> Poltronas</a>
+                             <a href="cadeiras.html"><img class="product-icon" src="https://img.icons8.com/ios/50/office-chair-2.png" /> Cadeiras</a>
+                             <a href="mobiliario.html"><img class="product-icon" src="https://img.icons8.com/ios/50/table.png" /> Mobiliário</a>
+                        </div>
+                    </li>
+                    <li><a href="parceiros.html">Club&Casa</a></li>
+                    <li><a href="contato2.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <a href="https://wa.me/c/558189198675" target="_blank" class="contact-button">Solicite seu Orçamento</a>
             </div>
-          </div>
         </div>
-        <!-- Card 2 -->
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <img src="https://gabbinetto.com.br/wp-content/uploads/2024/04/FUNDO-BRANCO-01-1-500x500.png" class="card-img-top" alt="Card 2">
-            <div class="card-body">
-              <h5 class="card-title">Plataforma Elevatória Eleva</h5>
-            </div>
-          </div>
-        </div>
-        <!-- Card 3 -->
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <img src="https://gabbinetto.com.br/wp-content/uploads/2024/04/FUNDO-BRANCO-6-POSICOES-500x500.png" class="card-img-top" alt="Card 3">
-            <div class="card-body">
-              <h5 class="card-title">Plataforma Elevatória Eleva</h5>
-            </div>
-          </div>
-        </div>
-        <!-- Card 4 -->
-        <div class="col-md-3 mb-4">
-          <div class="card">
-            <img src="https://gabbinetto.com.br/wp-content/uploads/2024/04/FUNDO-BRANCO-03-500x500.png" class="card-img-top" alt="Card 4">
-            <div class="card-body">
-              <h5 class="card-title">Plataforma Elevatória Eleva</h5>
-            </div>
-          </div>
-        </div>
+    </header>
 
-        
+    <main>
+        <section class="page-title-section category-title">
+            <div class="container" data-aos="fade-up">
+                <h1>Mobiliário</h1>
+                <p>Soluções completas para estações de trabalho, mesas e plataformas.</p>
+                </div>
+        </section>
 
-  <!-- Script do Bootstrap -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <section class="product-grid-section">
+            <div class="container">
+                <div class="product-grid" data-aos="fade-up">
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                            <img src="https://gabbinetto.com.br/wp-content/uploads/2024/04/FUNDO-BRANCO-02-500x500.png" alt="Plataforma Elevatória Eleva">
+                        </div>
+                        <div class="product-grid-content">
+                            <h3>Plataforma Elevatória Eleva</h3>
+                            <p>Ergonomia e ajuste de altura.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                            <img src="https://gabbinetto.com.br/wp-content/uploads/2024/04/FUNDO-BRANCO-01-1-500x500.png" alt="Plataforma Elevatória Eleva">
+                        </div>
+                        <div class="product-grid-content">
+                            <h3>Plataforma Elevatória Eleva</h3>
+                            <p>Versão individual.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                             <img src="https://gabbinetto.com.br/wp-content/uploads/2024/04/FUNDO-BRANCO-6-POSICOES-500x500.png" alt="Plataforma Elevatória Eleva">
+                        </div>
+                        <div class="product-grid-content">
+                             <h3>Plataforma Elevatória Eleva</h3>
+                             <p>Configuração para 6 posições.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                             <img src="https://gabbinetto.com.br/wp-content/uploads/2024/04/FUNDO-BRANCO-03-500x500.png" alt="Plataforma Elevatória Eleva">
+                        </div>
+                        <div class="product-grid-content">
+                             <h3>Plataforma Elevatória Eleva</h3>
+                             <p>Com divisórias acústicas.</p>
+                        </div>
+                    </div>
+                    
+                    </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+       <div class="container">
+           <a href="https://maps.app.goo.gl/qhvMyEn4xpFAwSA89" class="cta-button-secondary">Av. Conselheiro Aguiar, 642 - Pina - Recife - Pernambuco - CEP: 51.011-030</a>
+       </div>
+    </footer>
+
+    <a href="https://wa.me/c/558189198675" target="_blank" class="whatsapp-icon">
+       <img src="IMG/whatsappgif.gif" alt="Ícone flutuante do WhatsApp" />
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="scripts2.js"></script> 
 </body>
 </html>

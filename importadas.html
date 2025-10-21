@@ -1,293 +1,196 @@
-<!doctype html>
-<html lang="pt-BR">
-
+<!DOCTYPE html>
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sidebar com Bootstrap 5</title>
-    <!-- Link para o CSS do Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <!-- Link para o CSS customizado -->
-    <link rel="stylesheet" href="CSS/cadeiras.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadeiras Importadas - B3 Ambientes Corporativos</title>
+    <link rel="stylesheet" href="contato2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
-
 <body>
 
-    <header>
+    <header class="header">
         <div class="container">
-            <nav>
+            <a href="index.html" class="logo">
+                <img src="IMG/Logob3.png" alt="Logo B3 Ambientes Corporativos" />
+            </a>
+            <nav class="main-nav">
                 <ul>
-                    <a href="index.html">
-                        <img class="logo1" src="IMG/Logob3.png" alt="Logo B3 Ambientes Corporativos" class="logo" />
-                    </a>
-                    <li class="menu-item "><a href="sobrenos.html">Sobre nós</a></li>
-                    <li class="menu-item">
-                        <a href="#"> Produtos</a>
-                        <ul class="dropdown">
-                            <li class="menu-item">
-                                <a href="#"><img class="product-image"
-                                        src="https://img.icons8.com/?size=100&id=25289&format=png&color=000000"
-                                        alt="table" />
-                                    Poltronas
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="cadeiras.html"><img class="product-image"
-                                        src="https://img.icons8.com/ios/50/office-chair-2.png" alt="table" />
-                                    Cadeiras</a>
-
-                                <ul class="sub-dropdown">
-                                    <li><a href="cadeiras.html">- Office</a></li>
-
-                                    <li><a href="Multifuncionais.html">- Multifuncionais</a></li>
-                                    <li><a href="decor.html">- Decor</a></li>
-
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="mobiliario.html"><img class="product-image"
-                                        src="https://img.icons8.com/ios/50/table.png" alt="table" />
-                                    Mobiliário</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img class="product-image"
-                                        src="https://img.icons8.com/isometric-line/50/report-card.png" alt="table" />
-                                    Divisórias</a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <img class="product-image" src="https://img.icons8.com/windows/32/wardrobe.png"
-                                        alt="table" />
-                                    Armários</a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="product-image"
-                                        src="https://img.icons8.com/?size=100&id=11555&format=png&color=000000"
-                                        alt="table" />
-                                    Acústicas</a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="product-image"
-                                        src="https://img.icons8.com/?size=100&id=33796&format=png&color=000000"
-                                        alt="table" />
-                                    Sofás</a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="product-image"
-                                        src="https://img.icons8.com/?size=100&id=11321&format=png&color=000000"
-                                        alt="table" />
-                                    Escolar</a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="product-image"
-                                        src="https://img.icons8.com/?size=100&id=60612&format=png&color=000000"
-                                        alt="table" />
-                                    Refeitório</a>
-                            </li>
-                            <li>
-                                <a href="#"><img class="product-image"
-                                        src="https://img.icons8.com/windows/32/ellipsis.png" alt="table" />
-                                    Outros</a>
-                            </li>
-                        </ul>
+                    <li><a href="sobrenos.html">Sobre nós</a></li>
+                    <li class="dropdown">
+                        <a href="produtos.html">Produtos <i class="ph ph-caret-down"></i></a>
+                        <div class="dropdown-menu">
+                             <a href="poltrona.html"><img class="product-icon" src="https://img.icons8.com/?size=100&id=25289&format=png&color=000000" /> Poltronas</a>
+                             <a href="cadeiras.html"><img class="product-icon" src="https://img.icons8.com/ios/50/office-chair-2.png" /> Cadeiras</a>
+                             <a href="mobiliario.html"><img class="product-icon" src="https://img.icons8.com/ios/50/table.png" /> Mobiliário</a>
+                        </div>
                     </li>
-                    <li class="menu-item">
-                        <a href="parceiros.html">Clube&casa</a>
-                    </li>
-                    <li class="menu-item">
-                        <a
-                            href="https://drive.google.com/file/d/1OQqKCnvcf6vvEbHztaHXVQsgfnRhGKnw/view?usp=sharing">Catálogos</a>
-                    </li>
-                    <li class="menu-item"><a href="contato.html">Contato</a></li>
+                    <li><a href="parceiros.html">Club&Casa</a></li>
+                    <li><a href="contato2.html">Contato</a></li>
                 </ul>
             </nav>
+            <div class="header-right">
+                <a href="https://wa.me/c/558189198675" target="_blank" class="contact-button">Solicite seu Orçamento</a>
+            </div>
         </div>
     </header>
 
-    <main class="main-content">
-
-        <div class="sidebar">
-
-            <h4>Decor</h4>
-            <ul class="nav nav-underline flex-column">
-                <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="cadeiras.html">Office</a>
-                </li>
-
-
-
-
-                <li class="nav-item">
-                    <a class="nav-link" href="Multifuncionais.html">Multifuncionais</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="decor.html">Decor</a>
-                </li>
-
-
-
-
-            </ul>
-        </div>
-
-        <div class="content">
-            <h1>Decor</h1>
-
-            <div class="containerCards">
-                <div class="row row-cols-xl-4 row-cols-lg-3  row-cols-md-2 row-cols-sm-1">
-                    <!-- Card 1 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card">
-                            <img src="https://ordesign.com.br/img/produtos/17686.jpg" class="card-img-top"
-                                alt="Card 1" />
-                            <div class="card-body">
-                                <h5 class="card-title">Cadeira Mena PP Preta Com Almofada</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 2 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card">
-                            <img src="https://ordesign.com.br/img/produtos/17690.jpg" class="card-img-top"
-                                alt="Card 2" />
-                            <div class="card-body">
-                                <h5 class="card-title">Cadeira Loa PP Fendi Base Metal Cor Madeira</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 3 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card">
-                            <img src="https://ordesign.com.br/img/produtos/17642.jpg" class="card-img-top"
-                                alt="Card 3" />
-                            <div class="card-body">
-                                <h5 class="card-title">Cadeira Kaila PP Rosa Base Rodízio</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 4 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card">
-                            <img src="https://ordesign.com.br/img/produtos/17638.jpg" class="card-img-top"
-                                alt="Card 4" />
-                            <div class="card-body">
-                                <h5 class="card-title">Cadeira Kaila PP Azul Petróleo</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card">
-                            <img src="https://ordesign.com.br/img/produtos/17645.jpg" class="card-img-top"
-                                alt="Card 5" />
-                            <div class="card-body">
-                                <h5 class="card-title">Cadeira Kaila PP Amarela</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 6 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card">
-                            <img src="https://ordesign.com.br/img/produtos/17278.jpg" class="card-img-top"
-                                alt="Card 6" />
-                            <div class="card-body">
-                                <h5 class="card-title">Cadeira Amis Em Polipropileno Branca </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 7 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card">
-                            <img src="https://ordesign.com.br/img/produtos/17281.jpg" class="card-img-top"
-                                alt="Card 7" />
-                            <div class="card-body">
-                                <h5 class="card-title">Cadeira Plats Em Polipropileno Preta </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 8 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card">
-                            <img src="https://ordesign.com.br/img/produtos/17946.jpg" class="card-img-top"
-                                alt="Card 8" />
-                            <div class="card-body">
-                                <h5 class="card-title">Cadeira Wishbone Madeira Clara</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 9 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card">
-                            <img src="https://ordesign.com.br/img/produtos/17778.jpg" class="card-img-top"
-                                alt="Card 9" />
-                            <div class="card-body">
-                                <h5 class="card-title">Cadeira Denali Espuma Revestida Em PU Café
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 10 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card">
-                            <img src="https://ordesign.com.br/img/produtos/17789.jpg" class="card-img-top"
-                                alt="Card 10" />
-                            <div class="card-body">
-                                <h5 class="card-title">Cadeira Nanda  </h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 11 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card">
-                            <img src="https://ordesign.com.br/img/produtos/17952.jpg" class="card-img-top"
-                                alt="Card 11" />
-                            <div class="card-body">
-                                <h5 class="card-title">Cadeira Cesca PP Branca</h5>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Card 12 -->
-                    <div class="col-md-3 mb-4">
-                        <div class="card">
-                            <img src="https://ordesign.com.br/img/produtos/17833.jpg" class="card-img-top"
-                                alt="Card 12" />
-                            <div class="card-body">
-                                <h5 class="card-title">Cadeira Batur Espuma Revestida Em Linho Preta </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <main>
+        <section class="page-title-section category-title">
+            <div class="container" data-aos="fade-up">
+                <h1>Cadeiras Importadas</h1>
+                <p>Seleção exclusiva de design internacional.</p>
+                 <nav class="category-nav">
+                    <a href="cadeiras.html">Office</a> 
+                    <a href="Multifuncionais.html">Multifuncionais</a>
+                    <a href="decor.html">Decor</a>
+                    <a href="importadas.html" class="active">Importadas</a> </nav>
             </div>
-        </div>
+        </section>
+
+        <section class="product-grid-section">
+            <div class="container">
+                <div class="product-grid" data-aos="fade-up">
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                            <img src="https://ordesign.com.br/img/produtos/17686.jpg" alt="Cadeira Mena PP Preta Com Almofada">
+                        </div>
+                        <div class="product-grid-content">
+                            <h3>Cadeira Mena PP Preta Com Almofada</h3>
+                            <p>Design moderno e confortável.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                            <img src="https://ordesign.com.br/img/produtos/17690.jpg" alt="Cadeira Loa PP Fendi Base Metal Cor Madeira">
+                        </div>
+                        <div class="product-grid-content">
+                            <h3>Cadeira Loa PP Fendi Base Metal Cor Madeira</h3>
+                            <p>Elegância e materiais nobres.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                             <img src="https://ordesign.com.br/img/produtos/17642.jpg" alt="Cadeira Kaila PP Rosa Base Rodízio">
+                        </div>
+                        <div class="product-grid-content">
+                             <h3>Cadeira Kaila PP Rosa Base Rodízio</h3>
+                             <p>Cor vibrante e mobilidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                             <img src="https://ordesign.com.br/img/produtos/17638.jpg" alt="Cadeira Kaila PP Azul Petróleo">
+                        </div>
+                        <div class="product-grid-content">
+                             <h3>Cadeira Kaila PP Azul Petróleo</h3>
+                             <p>Design contemporâneo.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                             <img src="https://ordesign.com.br/img/produtos/17645.jpg" alt="Cadeira Kaila PP Amarela">
+                        </div>
+                        <div class="product-grid-content">
+                             <h3>Cadeira Kaila PP Amarela</h3>
+                             <p>Ponto de cor para o ambiente.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                            <img src="https://ordesign.com.br/img/produtos/17278.jpg" alt="Cadeira Amis Em Polipropileno Branca">
+                        </div>
+                        <div class="product-grid-content">
+                            <h3>Cadeira Amis Em Polipropileno Branca</h3>
+                            <p>Leveza e versatilidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                            <img src="https://ordesign.com.br/img/produtos/17281.jpg" alt="Cadeira Plats Em Polipropileno Preta">
+                        </div>
+                        <div class="product-grid-content">
+                            <h3>Cadeira Plats Em Polipropileno Preta</h3>
+                            <p>Design moderno e empilhável.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                            <img src="https://ordesign.com.br/img/produtos/17946.jpg" alt="Cadeira Wishbone Madeira Clara">
+                        </div>
+                        <div class="product-grid-content">
+                            <h3>Cadeira Wishbone Madeira Clara</h3>
+                            <p>Ícone do design escandinavo.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                            <img src="https://ordesign.com.br/img/produtos/17778.jpg" alt="Cadeira Denali Espuma Revestida Em PU Café">
+                        </div>
+                        <div class="product-grid-content">
+                            <h3>Cadeira Denali Espuma Revestida Em PU Café</h3>
+                            <p>Conforto e sofisticação.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                            <img src="https://ordesign.com.br/img/produtos/17789.jpg" alt="Cadeira Nanda">
+                        </div>
+                        <div class="product-grid-content">
+                            <h3>Cadeira Nanda</h3>
+                            <p>Design minimalista e elegante.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                            <img src="https://ordesign.com.br/img/produtos/17952.jpg" alt="Cadeira Cesca PP Branca">
+                        </div>
+                        <div class="product-grid-content">
+                            <h3>Cadeira Cesca PP Branca</h3>
+                            <p>Clássico do design moderno.</p>
+                        </div>
+                    </div>
+
+                    <div class="product-grid-card">
+                        <div class="product-grid-image">
+                            <img src="https://ordesign.com.br/img/produtos/17833.jpg" alt="Cadeira Batur Espuma Revestida Em Linho Preta">
+                        </div>
+                        <div class="product-grid-content">
+                            <h3>Cadeira Batur Espuma Revestida Em Linho Preta</h3>
+                            <p>Conforto e textura natural.</p>
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+        </section>
     </main>
 
+    <footer class="footer">
+       <div class="container">
+           <a href="https://maps.app.goo.gl/qhvMyEn4xpFAwSA89" class="cta-button-secondary">Av. Conselheiro Aguiar, 642 - Pina - Recife - Pernambuco - CEP: 51.011-030</a>
+       </div>
+    </footer>
 
-    <script> let lastScrollTop = 0;
-        const header = document.querySelector('header');
+    <a href="https://wa.me/c/558189198675" target="_blank" class="whatsapp-icon">
+       <img src="IMG/whatsappgif.gif" alt="Ícone flutuante do WhatsApp" />
+    </a>
 
-        window.addEventListener('scroll', () => {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-            if (scrollTop > lastScrollTop) {
-                // Rolando para baixo
-                header.style.top = '-90px'; // Oculta o cabeçalho (ajuste -90px conforme necessário)
-            } else {
-                // Rolando para cima
-                header.style.top = '0px'; // Mostra o cabeçalho
-            }
-
-            lastScrollTop = scrollTop <= 0 ? 0 : scrollTop; // Para Mobile Safari
-        });
-    </script>
-
-
-    <!-- Script do Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="scripts2.js"></script> 
 </body>
-
 </html>

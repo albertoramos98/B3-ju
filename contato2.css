@@ -137,7 +137,7 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 
 /* CLIENTES */
 .clients-swiper .swiper-slide { display: flex; justify-content: center; align-items: center; height: 100px; }
-.clients-swiper img { max-width: 140px; max-height: 60px; height: auto; width: auto; filter: grayscale(100%); opacity: 0.6; transition: all 0.3s ease; }
+.clients-swiper img { max-width: 140px; max-height: 60px; height: auto; width: auto; opacity: 0.6; transition: all 0.3s ease; }
 .clients-swiper img:hover { filter: grayscale(0%); opacity: 1; }
 
 /* FOOTER E WHATSAPP */
@@ -329,4 +329,270 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
     .como-funciona h3 {
         font-size: 1.6rem;
     }
+}
+
+/* --- ESTILOS PARA A PÁGINA DE PRODUTOS (produtos.html) --- */
+
+/* Seção do Título da Página */
+.page-title-section {
+    padding: 60px 0;
+    background-color: var(--light-gray-color);
+    text-align: center;
+}
+.page-title-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.page-title-section p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Seção da Grade de Produtos */
+.product-grid-section {
+    padding: 80px 0;
+    background-color: var(--white-color);
+}
+
+.product-grid {
+    display: grid;
+    /* Cria colunas responsivas: 4 em telas grandes, 3 médias, 2 pequenas */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px; /* Espaço entre os cards */
+}
+
+.product-grid-card {
+    display: block; /* Faz o card inteiro ser um link */
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    overflow: hidden; /* Garante que a imagem não vaze */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-grid-card:hover {
+    transform: translateY(-5px); /* Efeito sutil de levantar */
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.product-grid-image {
+    height: 220px; /* Altura fixa para a imagem */
+    background-color: #f0f0f0; /* Fundo para imagens transparentes */
+}
+
+.product-grid-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cobre a área sem distorcer (pode usar 'contain' se preferir) */
+}
+
+.product-grid-content {
+    padding: 20px;
+}
+
+.product-grid-content h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 8px;
+}
+
+.product-grid-content p {
+    font-size: 0.95rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* --- ESTILOS ADICIONAIS PARA PÁGINAS DE CATEGORIA DE PRODUTO --- */
+
+/* Ajuste no título da página para incluir a subnavegação */
+.page-title-section.category-title {
+    padding-bottom: 0; /* Remove padding inferior para colar a navegação */
+}
+
+/* Subnavegação de Categoria (Substitui a Sidebar) */
+.category-nav {
+    margin-top: 30px;
+    padding-bottom: 30px; /* Espaço abaixo da navegação */
+    border-bottom: 1px solid #eee; /* Linha sutil abaixo */
+    text-align: center;
+}
+
+.category-nav a {
+    text-decoration: none;
+    color: var(--gray-color);
+    font-weight: 500;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 20px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.category-nav a:hover {
+    background-color: #eee;
+    color: var(--primary-color);
+}
+
+.category-nav a.active {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* Ajustes na Grade de Produtos Específicos */
+.product-grid-section .product-grid {
+    /* Usa o mesmo grid responsivo da página produtos.html */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.product-grid-section .product-grid-card {
+    /* Reutiliza o estilo do card da produtos.html */
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--white-color);
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Adicionado para controle interno */
+    flex-direction: column; /* Organiza imagem e texto */
+    height: 100%; /* Faz o card ocupar a altura da linha do grid */
+}
+
+.product-grid-section .product-grid-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.product-grid-section .product-grid-image {
+    height: 250px; /* Altura da imagem */
+    background-color: #f0f0f0;
+    padding: 10px; /* Espaço interno para a imagem */
+}
+
+.product-grid-section .product-grid-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Mostra a imagem inteira */
+}
+
+.product-grid-section .product-grid-content {
+    padding: 20px;
+    flex-grow: 1; /* Faz o conteúdo textual ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+}
+
+.product-grid-section .product-grid-content h3 {
+    font-size: 1.2rem; /* Tamanho do nome do produto */
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 8px;
+}
+
+.product-grid-section .product-grid-content p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+    margin-bottom: 15px; /* Espaço antes do botão (se houver) */
+    flex-grow: 1; /* Empurra o botão para baixo */
+}
+
+/* Botão Opcional de Detalhes */
+.details-button {
+    display: inline-block;
+    background: none;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.85rem;
+    margin-top: auto; /* Empurra para o final do card */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.details-button:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+
+/* Estilo da Paginação (se for usar) */
+.pagination-nav {
+    margin-top: 50px;
+}
+.pagination .page-link {
+    color: var(--primary-color);
+}
+.pagination .page-item.active .page-link {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-color);
+}
+.pagination .page-item.disabled .page-link {
+    color: #aaa;
+}
+/* --- ESTILO PARA A PAGINAÇÃO (SEM BOOTSTRAP) --- */
+
+.pagination-nav {
+    margin-top: 60px; /* Espaço acima da paginação */
+    display: flex;     /* Centraliza a lista ul */
+    justify-content: center;
+}
+
+.pagination {
+    list-style: none; /* Remove bolinhas da lista */
+    padding: 0;       /* Remove padding padrão */
+    display: flex;     /* Coloca os itens LIs em linha */
+    gap: 8px;          /* Espaço entre os botões */
+}
+
+.page-item {
+    /* Não precisa de estilo aqui, controlamos no link */
+}
+
+.page-link {
+    display: block; /* Garante que o link ocupe o espaço */
+    padding: 10px 16px; /* Tamanho do botão */
+    text-decoration: none;
+    color: var(--primary-color); /* Cor do texto (azul escuro) */
+    background-color: var(--white-color); /* Fundo branco */
+    border: 1px solid #dee2e6; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: #e9ecef; /* Fundo cinza claro no hover */
+    color: var(--secondary-color); /* Cor dourada no hover */
+    border-color: #ced4da;
+}
+
+.page-item.active .page-link {
+    background-color: var(--primary-color); /* Fundo azul escuro para ativo */
+    border-color: var(--primary-color);
+    color: var(--white-color); /* Texto branco para ativo */
+    cursor: default; /* Não clicável */
+}
+
+.page-item.disabled .page-link {
+    color: #aaa; /* Cor cinza para desabilitado */
+    background-color: var(--white-color);
+    border-color: #dee2e6;
+    pointer-events: none; /* Desabilita o clique */
+    cursor: default;
+}
+
+/* Ajuste opcional para o link "Anterior" e "Próximo" */
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    /* Pode adicionar estilos específicos se quiser */
 }
