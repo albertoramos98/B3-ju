@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
     }
 
     // 2. CONTROLA O CARROSSEL DE BANNERS DO TOPO (HERO)
-    // Using correct selectors and adding back AOS refresh logic
     const heroSwiper = new Swiper('.hero-swiper', {
         loop: true,
         effect: 'fade',
@@ -18,14 +17,13 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
             disableOnInteraction: false,
         },
         pagination: {
-            el: '.hero-pagination', // Your custom class
+            el: '.hero-pagination',
             clickable: true,
         },
         navigation: {
-            nextEl: '.hero-next', // Your custom class
-            prevEl: '.hero-prev', // Your custom class
+            nextEl: '.hero-next',
+            prevEl: '.hero-prev',
         },
-        // Logic to restart text animation on slide change
         on: {
             slideChangeTransitionStart: function () {
                 this.slides.forEach(slide => {
@@ -44,29 +42,41 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
         }
     });
 
-    // 3. CONTROLA O CARROSSEL DE PRODUTOS (WITH LOOP AND NO slidesPerGroup)
+    // 3. CONTROLA O CARROSSEL DE PRODUTOS (AGORA COM LOOP INFINITO 🔁)
     const productSwiper = new Swiper('.product-swiper', {
-        loop: false, // <<< MUDANÇA: Loop desativado para slidesPerGroup funcionar melhor
+        loop: true, // 🔁 agora o carrossel gira infinitamente
         slidesPerView: 1,
         spaceBetween: 20,
-        pagination: { el: '.product-pagination', clickable: true }, 
-        navigation: { nextEl: '.product-next', prevEl: '.product-prev' }, 
+        pagination: {
+            el: '.product-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.product-next',
+            prevEl: '.product-prev'
+        },
+        // autoplay opcional (ativa se quiser)
+         autoplay: {
+             delay: 4000,
+             disableOnInteraction: false,
+         },
         breakpoints: {
             576: {
                 slidesPerView: 2,
-                slidesPerGroup: 2 // <<< ADICIONADO DE VOLTA
+                slidesPerGroup: 2
             },
             768: {
                 slidesPerView: 3,
-                slidesPerGroup: 3 // <<< ADICIONADO DE VOLTA
+                slidesPerGroup: 3
             },
             1200: {
                 slidesPerView: 5,
-                slidesPerGroup: 5, // <<< ADICIONADO DE VOLTA
+                slidesPerGroup: 5,
                 spaceBetween: 30
             }
         }
     });
+
     // 4. CONTROLA O CARROSSEL DE CLIENTES
     const clientsSwiper = new Swiper('.clients-swiper', {
         loop: true,
@@ -80,18 +90,13 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
         }
     });
 
-    // 5. CONTROLA O MENU MOBILE (NOW INSIDE DOMContentLoaded)
+    // 5. CONTROLA O MENU MOBILE
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileNav = document.getElementById('mobile-nav');
 
     if (mobileMenuButton && mobileNav) {
         mobileMenuButton.addEventListener('click', function() {
-            // Toggles the display of the mobile menu panel
-            if (mobileNav.style.display === 'block') {
-                mobileNav.style.display = 'none';
-            } else {
-                mobileNav.style.display = 'block';
-            }
+            mobileNav.style.display = (mobileNav.style.display === 'block') ? 'none' : 'block';
         });
     }
 
