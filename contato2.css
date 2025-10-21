@@ -384,10 +384,23 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 
 .product-grid {
     display: grid;
-    /* Cria colunas responsivas: 4 em telas grandes, 3 médias, 2 pequenas */
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px; /* Espaço entre os cards */
+    gap: 30px; /* Mantém o espaçamento */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Mantém para telas pequenas */
 }
+
+/* FORÇA 3 COLUNAS EM TELAS MAIORES */
+@media (min-width: 768px) { /* A partir de tablets */
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr); /* Exatamente 3 colunas iguais */
+    }
+}
+
+/* Opcional: Forçar 2 colunas em telas um pouco menores, se quiser */
+@media (min-width: 576px) and (max-width: 767px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+} 
 
 .product-grid-card {
     display: block; /* Faz o card inteiro ser um link */
