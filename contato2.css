@@ -596,3 +596,159 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 .page-item:last-child .page-link {
     /* Pode adicionar estilos específicos se quiser */
 }
+
+/* --- ESTILOS PARA O MENU MOBILE --- */
+
+.mobile-menu-icon {
+    display: none; /* Escondido por padrão em telas grandes */
+    background: none;
+    border: none;
+    font-size: 2rem; /* Tamanho do ícone */
+    color: var(--primary-color); /* Cor do ícone */
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 15px; /* Espaço entre o botão de orçamento e o ícone */
+}
+
+.mobile-nav {
+    display: none; /* Painel escondido por padrão */
+    background-color: var(--dark-color); /* Fundo escuro */
+    padding: 20px 0;
+    position: absolute; /* Ou fixed, dependendo do efeito desejado */
+    top: 80px; /* Logo abaixo do header */
+    left: 0;
+    width: 100%;
+    z-index: 99; /* Abaixo do header, mas acima do conteúdo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.mobile-nav ul li {
+    margin: 15px 0;
+}
+
+.mobile-nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-nav ul li a:hover {
+    background-color: var(--primary-color); /* Fundo azul no hover */
+}
+
+/* --- AJUSTES DE RESPONSIVIDADE PARA ATIVAR O MENU MOBILE --- */
+
+@media (max-width: 992px) {
+    .main-nav, .header-right .contact-button {
+        display: none; /* Esconde o menu principal e botão de orçamento */
+    }
+    .mobile-menu-icon {
+        display: block; /* Mostra o ícone hambúrguer */
+    }
+    /* Ajusta o container do header para dar espaço */
+    .header .container {
+        justify-content: space-between; /* Garante logo na esquerda, ícone na direita */
+    }
+     .main-nav {
+         flex-grow: 0; /* Impede que o espaço vazio do menu afete o layout */
+     }
+}
+
+/* Garante que o CSS anterior não seja sobrescrito incorretamente */
+@media (max-width: 768px) {
+    /* Mantém as regras de 992px ativas */
+     .main-nav, .header-right .contact-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    /* Outras regras específicas para 768px */
+    .features-grid, .cases-grid, .reviews-grid { grid-template-columns: 1fr; }
+}
+/* --- ESTILOS PARA A PÁGINA SOBRE NÓS (sobrenos.html) --- */
+
+/* Reutiliza o estilo da seção de título de outras páginas */
+.page-title-section {
+    padding: 60px 0;
+    background-color: var(--light-gray-color);
+    text-align: center;
+    border-bottom: 1px solid #eee; /* Linha sutil opcional */
+}
+.page-title-section h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+.page-title-section p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Estilo das seções de conteúdo */
+.about-content-section {
+    padding: 80px 0;
+    background-color: var(--white-color); /* Fundo branco padrão */
+}
+
+.about-content-section.bg-light {
+    background-color: var(--light-gray-color); /* Fundo cinza claro alternado */
+}
+
+.about-content-block {
+    max-width: 850px; /* Limita a largura do texto */
+    margin: 0 auto; /* Centraliza o bloco */
+    text-align: center; /* Centraliza o conteúdo interno */
+}
+
+.icon-about {
+    font-size: 3.5rem; /* Tamanho do ícone */
+    color: var(--secondary-color); /* Cor dourada */
+    margin-bottom: 25px;
+    display: inline-block; /* Permite centralizar com text-align */
+}
+
+.about-content-block h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.about-content-block p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    text-align: justify; /* Justifica o texto para melhor leitura */
+}
+
+/* Responsividade para a página Sobre Nós */
+@media (max-width: 768px) {
+    .page-title-section h1 {
+        font-size: 2.2rem;
+    }
+    .about-content-block h2 {
+        font-size: 1.8rem;
+    }
+    .about-content-block p {
+        font-size: 1rem;
+        text-align: left; /* Desfaz justificado em telas pequenas */
+    }
+    .about-content-section {
+        padding: 60px 0;
+    }
+}

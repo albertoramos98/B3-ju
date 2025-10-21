@@ -42,3 +42,19 @@ const productSwiper = new Swiper('.product-swiper', {
     });
 
 });
+
+// 5. CONTROLA O MENU MOBILE (ADICIONADO/REATIVADO)
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileNav = document.getElementById('mobile-nav');
+
+    // Verifica se os elementos existem antes de adicionar o listener
+    if (mobileMenuButton && mobileNav) {
+        mobileMenuButton.addEventListener('click', function() {
+            // Alterna a exibição do painel do menu mobile
+            if (mobileNav.style.display === 'block') {
+                mobileNav.style.display = 'none';
+            } else {
+                mobileNav.style.display = 'block';
+            }
+        });
+    }
