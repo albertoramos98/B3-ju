@@ -60,6 +60,24 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
     /* Adiciona um padding inferior para dar espaço às bolinhas */
     padding-bottom: 120px; /* Aumenta o padding inferior da seção inteira */
 }
+/* Ajuste da posição da paginação do carrossel de produtos */
+.product-swiper .swiper-pagination {
+  position: absolute;
+  bottom: -40px !important; /* 🔹 Move as bolinhas mais pra baixo */
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.product-swiper .swiper-pagination-bullet {
+  background: #bbb;
+  opacity: 1;
+}
+
+.product-swiper .swiper-pagination-bullet-active {
+  background: var(--secondary-color);
+}
+
 
 .product-swiper .swiper-wrapper {
   align-items: stretch; /* garante altura uniforme */
