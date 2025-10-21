@@ -752,3 +752,246 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
         padding: 60px 0;
     }
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+
+:root {
+    --primary-color: #0a3a58;
+    --secondary-color: #A98A58;
+    --dark-color: #1a1a1a;
+    --gray-color: #333;
+    --light-gray-color: #f8f9fa;
+    --white-color: #ffffff;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Montserrat', sans-serif; line-height: 1.6; color: var(--dark-color); }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
+
+/* --- HEADER --- */
+.header { background-color: var(--white-color); box-shadow: 0 2px 5px rgba(0,0,0,0.05); position: sticky; top: 0; z-index: 100; }
+.header .container { display: flex; justify-content: space-between; align-items: center; height: 80px; }
+.logo img { max-height: 50px; }
+.main-nav { flex-grow: 1; }
+.main-nav ul { list-style: none; display: flex; justify-content: center; }
+.main-nav ul li a { text-decoration: none; color: var(--gray-color); padding: 10px 15px; font-weight: 500; transition: color 0.3s ease; display: flex; align-items: center; gap: 4px; }
+.main-nav ul li a:hover { color: var(--secondary-color); }
+.header-right { flex-shrink: 0; display: flex; align-items: center; } /* Adicionado display:flex */
+.contact-button { background-color: var(--secondary-color); color: var(--white-color); padding: 10px 20px; border-radius: 5px; text-decoration: none; font-weight: 500; transition: background-color 0.3s ease; }
+.contact-button:hover { background-color: #8e734a; }
+.dropdown { position: relative; }
+.dropdown-menu { display: none; position: absolute; top: 100%; left: 0; background-color: var(--white-color); box-shadow: 0 8px 16px rgba(0,0,0,0.1); border-radius: 5px; padding: 10px 0; z-index: 101; min-width: 220px; }
+.dropdown:hover .dropdown-menu { display: block; }
+.dropdown-menu a { display: flex; align-items: center; padding: 12px 20px; width: 100%; color: var(--dark-color); }
+.product-icon { width: 24px; height: 24px; margin-right: 15px; }
+
+/* --- CARROSSEL HERO --- */
+.hero-section { height: 75vh; color: var(--white-color); position: relative; }
+.hero-swiper, .hero-slide { width: 100%; height: 100%; }
+.hero-slide { background-size: cover; background-position: center; position: relative; display: flex; justify-content: center; align-items: center; }
+.hero-slide::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); }
+.hero-content { position: relative; z-index: 2; text-align: center; max-width: 800px; padding: 20px; }
+.hero-content h1 { font-size: 3.5rem; font-weight: 800; margin-bottom: 20px; text-shadow: 0 2px 4px rgba(0,0,0,0.5); }
+.hero-content p { font-size: 1.3rem; margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; }
+.hero-content .cta-button { background-color: var(--secondary-color); color: var(--white-color); padding: 15px 30px; border-radius: 5px; text-decoration: none; font-size: 1.1rem; font-weight: 700; transition: background-color 0.3s ease; border: none; }
+.hero-content .cta-button:hover { background-color: #8e734a; }
+.hero-nav-arrow { color: var(--white-color) !important; }
+.hero-swiper .swiper-pagination-bullet { background: rgba(255, 255, 255, 0.7); opacity: 1; }
+.hero-swiper .swiper-pagination-bullet-active { background: var(--secondary-color); }
+
+/* --- OUTRAS SEÇÕES (CSS existente) --- */
+/* ... (todo o seu CSS para features, products, cases, etc.) ... */
+
+/* --- FOOTER E WHATSAPP --- */
+.footer { background-color: var(--dark-color); color: var(--light-gray-color); padding: 30px 0; text-align: center; }
+/* ... (resto do CSS do footer) ... */
+.whatsapp-icon { position: fixed; bottom: 25px; right: 25px; z-index: 100; }
+.whatsapp-icon img { width: 70px; height: 70px; border-radius: 50%; box-shadow: 0 4px 12px rgba(0,0,0,0.25); }
+
+/* --- ESTILOS PARA O MENU MOBILE --- */
+.mobile-menu-icon {
+    display: none;
+    background: none; border: none;
+    font-size: 2.2rem; /* Aumentei um pouco */
+    color: var(--primary-color);
+    cursor: pointer; padding: 5px;
+    margin-left: 15px; /* Espaço depois do botão de orçamento */
+}
+.mobile-nav {
+    display: none;
+    background-color: var(--dark-color);
+    padding: 20px 0;
+    position: absolute; /* Fica abaixo do header */
+    top: 80px; /* Altura do header */
+    left: 0; width: 100%;
+    z-index: 99;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.mobile-nav ul { list-style: none; padding: 0; margin: 0; text-align: center; }
+.mobile-nav ul li { margin: 15px 0; }
+.mobile-nav ul li a { color: var(--white-color); text-decoration: none; font-size: 1.2rem; font-weight: 500; padding: 10px; display: block; transition: background-color 0.3s ease; }
+.mobile-nav ul li a:hover { background-color: var(--primary-color); }
+
+
+/* --- ESTILOS PARA O MENU MOBILE (PRECISA ESTAR ANTES DAS MEDIA QUERIES) --- */
+
+.mobile-menu-icon {
+    display: none; /* Escondido por padrão em telas grandes */
+    background: none;
+    border: none;
+    font-size: 2.2rem; /* Tamanho do ícone */
+    color: var(--primary-color); /* Cor do ícone */
+    cursor: pointer;
+    padding: 5px;
+    margin-left: 15px; /* Espaço entre o botão de orçamento e o ícone */
+}
+
+.mobile-nav {
+    display: none; /* Painel escondido por padrão */
+    background-color: var(--dark-color); /* Fundo escuro */
+    padding: 20px 0;
+    position: absolute; /* Fica abaixo do header */
+    top: 80px; /* Altura do header */
+    left: 0;
+    width: 100%;
+    z-index: 99; /* Abaixo do header, mas acima do conteúdo */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mobile-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.mobile-nav ul li {
+    margin: 15px 0;
+}
+
+.mobile-nav ul li a {
+    color: var(--white-color);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-nav ul li a:hover {
+    background-color: var(--primary-color); /* Fundo azul no hover */
+}
+
+
+/* --- REGRAS DE RESPONSIVIDADE --- */
+
+@media (max-width: 992px) {
+    /* Esconde menu principal e botão de orçamento, mostra ícone hambúrguer */
+    .main-nav, .header-right .contact-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    /* Ajusta o layout do header para o ícone */
+    .header .container {
+        justify-content: space-between;
+    }
+    .main-nav {
+        flex-grow: 0; /* Impede que o espaço vazio afete o layout */
+    }
+
+    /* Diminui texto do Hero */
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .hero-content p {
+        font-size: 1.1rem;
+    }
+
+    /* Ajusta Grids para 2 colunas */
+    .features-grid, .reviews-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    /* Cases já fica com 1 coluna neste ponto ou antes */
+    .cases-grid {
+        grid-template-columns: 1fr;
+    }
+    /* Empilha seção Sobre */
+    .about-flex {
+        flex-direction: column;
+    }
+     /* Ajusta grid de produtos */
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    /* Ajuste para página de contato se necessário */
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Diminui ainda mais o texto do Hero */
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    /* Garante 1 coluna para todos os grids principais */
+    .features-grid, .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+     /* Ajusta grid de produtos para telas menores */
+    .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    /* Ajusta Footer */
+     .redes {
+         flex-direction: column;
+         gap: 12px;
+     }
+     .containerfooter p { /* Ajustado seletor */
+         font-size: 12px;
+     }
+
+     /* Ajustes para página Sobre Nós em telas pequenas */
+     .page-title-section h1 { font-size: 2.2rem; }
+     .about-content-block h2 { font-size: 1.8rem; }
+     .about-content-block p { font-size: 1rem; text-align: left; }
+     .about-content-section { padding: 60px 0; }
+}
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 992px) {
+    /* Esconde menu principal e botão, mostra hambúrguer */
+    .main-nav, .header-right .contact-button { display: none; }
+    .mobile-menu-icon { display: block; }
+    .header .container { justify-content: space-between; } /* Ajusta header */
+    .main-nav { flex-grow: 0; } /* Evita empurrar o layout */
+
+    /* Diminui texto do Hero */
+    .hero-content h1 { font-size: 2.5rem; }
+    .hero-content p { font-size: 1.1rem; }
+
+    /* Ajusta grids */
+    .features-grid, .reviews-grid { grid-template-columns: 1fr 1fr; }
+    .cases-grid { grid-template-columns: 1fr; } /* Case já fica 1 coluna */
+    .about-flex { flex-direction: column; }
+    .product-grid { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); } /* Ajusta grid de produtos */
+}
+
+@media (max-width: 768px) {
+    /* Diminui ainda mais o texto do Hero */
+    .hero-content h1 { font-size: 2rem; }
+    .hero-content p { font-size: 1rem; }
+
+    /* Garante 1 coluna para grids */
+    .features-grid, .reviews-grid { grid-template-columns: 1fr; }
+    .product-grid { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } /* Ajusta grid de produtos */
+}
