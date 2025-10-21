@@ -358,10 +358,11 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 /* --- ESTILOS PARA A PÁGINA DE PRODUTOS (produtos.html) --- */
 
 /* Seção do Título da Página */
-.page-title-section {
-    padding: 60px 0;
-    background-color: var(--light-gray-color);
-    text-align: center;
+.page-title-section p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 900px; /* <<< VALOR AUMENTADO para esticar o texto */
+    margin: 0 auto;
 }
 .page-title-section h1 {
     font-size: 2.8rem;
@@ -732,7 +733,7 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 .page-title-section p {
     font-size: 1.1rem;
     color: #666;
-    max-width: 600px;
+    max-width:900px;
     margin: 0 auto;
 }
 
