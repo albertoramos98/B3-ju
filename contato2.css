@@ -1036,3 +1036,29 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 
 /* --- ESTILO E POSICIONAMENTO DAS SETAS DOS CARROSSEIS --- */
 
+/* ===== BOTÃO DO CATÁLOGO ===== */
+.catalog-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 32px;
+    background-color: #A98A58; /* tom dourado da identidade visual */
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.catalog-button:hover {
+    background-color: #8b734a; /* dourado mais escuro no hover */
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* Centralizar o botão abaixo do texto */
+.page-title-section .container {
+    text-align: center;
+}
