@@ -101,3 +101,25 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
     }
 
 }); // <-- END of the main function
+// 6. CARROSSEL CASES DE SUCESSO (NOVO)
+    const casesSwiper = new Swiper('.cases-swiper', {
+        loop: true, // Loop infinito
+        slidesPerView: 1, // Começa com 1 slide visível em telas pequenas
+        spaceBetween: 30, // Espaço entre os slides
+        pagination: { 
+            el: '.cases-pagination', // Usa a classe customizada
+            clickable: true 
+        },
+        navigation: { 
+            nextEl: '.cases-next', // Usa a classe customizada
+            prevEl: '.cases-prev'  // Usa a classe customizada
+        },
+        breakpoints: {
+            // A partir de 768px (tablets), mostra 2 cases lado a lado
+            768: {
+              slidesPerView: 2,
+              spaceBetween: 30
+            }
+            // Não precisa de breakpoint maior se 2 for o ideal
+        }
+    });

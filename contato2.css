@@ -1062,3 +1062,102 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 .page-title-section .container {
     text-align: center;
 }
+
+/* --- ESTILO PARA O CARROSSEL CASES DE SUCESSO --- */
+
+.cases {
+    background-color: var(--white-color); 
+    position: relative; /* Contexto para as setas */
+    padding-bottom: 60px; /* Mais espaço inferior para nav/pag */
+}
+
+/* REMOVER ou COMENTAR a regra .cases-grid antiga */
+/* .cases-grid { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 30px; 
+} 
+*/
+
+.cases-swiper {
+    padding-bottom: 50px; /* Espaço interno para a paginação */
+    overflow: hidden; 
+}
+
+/* Mantém o estilo do card, mas garante altura automática dentro do slide */
+.cases-swiper .swiper-slide {
+    height: auto; /* Slide se ajusta à altura do card */
+}
+
+.case-card {
+    /* Mantém os estilos existentes: position, border-radius, overflow, shadow, color, text-decoration */
+    /* Garante altura e flexbox interno */
+    display: flex; 
+    flex-direction: column;
+    height: 450px; /* Mantém a altura fixa que tínhamos */
+    width: 100%; /* Ocupa a largura do slide */
+}
+.case-card img {
+    width: 100%;
+    height: 100%; /* Imagem tenta preencher a altura */
+    object-fit: cover; 
+    transition: transform 0.4s ease; 
+}
+.case-card:hover img {
+    transform: scale(1.05); 
+}
+.case-info {
+    /* Mantém os estilos existentes */
+}
+.case-info h3 { /* Mantém estilos */ }
+.case-info p { /* Mantém estilos */ }
+
+
+/* Paginação (bolinhas) */
+.cases-pagination.swiper-pagination {
+    position: absolute;
+    bottom: 10px !important; 
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto !important;
+}
+.cases-pagination .swiper-pagination-bullet {
+    background-color: var(--gray-color);
+    opacity: 0.5;
+    margin: 0 4px !important;
+}
+.cases-pagination .swiper-pagination-bullet-active {
+    background-color: var(--primary-color);
+    opacity: 1;
+}
+
+/* Navegação (Setas) */
+.cases-next,
+.cases-prev {
+    color: var(--primary-color) !important;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    width: 44px !important;
+    height: 44px !important;
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-70%); /* Ajuste fino para subir um pouco */
+    transition: background-color 0.3s ease;
+    position: absolute; /* Garante posicionamento absoluto */
+    z-index: 10;
+}
+.cases-next:hover,
+.cases-prev:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.cases-next { right: 15px; } /* Posição da seta direita */
+.cases-prev { left: 15px; } /* Posição da seta esquerda */
+
+.cases-next::after,
+.cases-prev::after {
+    font-family: swiper-icons;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.cases-prev::after { content: 'prev'; }
+.cases-next::after { content: 'next'; }
