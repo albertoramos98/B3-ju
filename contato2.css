@@ -1190,4 +1190,4 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 /* Efeito HOVER no link */
 .cases-subtitle-link:hover {
     color: var(--secondary-color); /* Muda para a cor dourada */
-    transform: scale(1.03); /* Dá um leve zoom */
+    transform: scale(1.03); /* Dá um leve zoom */}
