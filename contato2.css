@@ -1161,3 +1161,33 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 }
 .cases-prev::after { content: 'prev'; }
 .cases-next::after { content: 'next'; }
+
+/* Estiliza o LINK (a tag <a>) */
+.cases-subtitle-link {
+    display: block; /* Faz o link ocupar a largura */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    font-size: 1.1rem;
+    text-align: center;
+    color: var(--gray-color);
+    font-weight: 500;
+    margin-top: -25px; 
+    margin-bottom: 40px; 
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Estiliza o H3 dentro do link */
+.cases-subtitle-link h3 {
+    font-size: inherit; /* Herda o tamanho do link */
+    color: inherit; /* Herda a cor do link */
+    font-weight: inherit; /* Herda o peso do link */
+    text-transform: inherit; /* Herda o uppercase */
+    letter-spacing: inherit; /* Herda o espaçamento */
+    margin: 0; /* Remove margens internas do H3 */
+}
+
+/* Efeito HOVER no link */
+.cases-subtitle-link:hover {
+    color: var(--secondary-color); /* Muda para a cor dourada */
+    transform: scale(1.03); /* Dá um leve zoom */
