@@ -242,4 +242,23 @@ input:focus, textarea:focus {
   box-shadow: 0 6px 18px rgba(0,0,0,0.3);
 }
 
-  
+/* --- ESTILO DO LINK DE PRIVACIDADE NO FOOTER --- */
+.footer-link {
+  color: #f5f6f7;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #f5f6f7;
+  opacity: 1;
+  text-decoration: underline;
+}
+.footer p {
+  font-size: 13px;
+  color: #f5f6f7;
+  margin-top: 8px;
+  display: inline-block;
+  white-space: nowrap; /* mantém tudo na mesma linha */
+}
