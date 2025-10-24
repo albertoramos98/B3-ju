@@ -123,3 +123,28 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
             // Não precisa de breakpoint maior se 2 for o ideal
         }
     });
+    const existingBanner = document.getElementById("cookie-banner");
+    if (!existingBanner) {
+        const cookieBanner = document.createElement("div");
+        cookieBanner.id = "cookie-banner";
+        cookieBanner.innerHTML = `
+            <p>Nós usamos cookies para melhorar sua experiência. 
+                Ao continuar a navegar, você concorda com a nossa 
+                <a href="politica.html">Política de Privacidade</a>.
+            </p>
+            <button id="accept-cookies">Entendi e Aceitar</button>
+        `;
+        document.body.appendChild(cookieBanner);
+
+        const cookieAccepted = localStorage.getItem("cookiesAccepted");
+        if (!cookieAccepted) {
+            cookieBanner.style.display = "flex";
+        }
+
+        document
+            .getElementById("accept-cookies")
+            .addEventListener("click", () => {
+                localStorage.setItem("cookiesAccepted", "true");
+                cookieBanner.style.display = "none";
+            });
+    }
