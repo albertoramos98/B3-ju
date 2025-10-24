@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home1/bmmov156/public_html/b3/
+    - /bin/cp -R * $DEPLOYPATH
