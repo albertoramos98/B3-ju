@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-    <!-- Google Tag Manager -->
-<script>
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
-var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'',
-j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PSV9TFJK');
-</script>
-<!-- End Google Tag Manager -->
+        <!-- Google Tag Manager -->
+        <script>
+        (function(w,d,s,l,i){
+          w[l]=w[l]||[];
+          w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+          var f = d.getElementsByTagName(s)[0],
+              j = d.createElement(s),
+              dl = l!='dataLayer' ? '&l='+l : '';
+          j.async = true;
+          j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+          f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-PSV9TFJK');
+        </script>
+        <!-- End Google Tag Manager -->
+
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <meta property="og:title" content="B3 Ambientes Corporativos" />
         <meta property="og:description" content="Soluções eficientes em mobiliário corporativo, com inovação, agilidade, qualidade e preço justo. Mais de 20 anos de experiência no mercado de móveis." />
         <meta property="og:image" content="https://b3ambientescorporativos.com.br/IMG/Logob3.png" />
@@ -25,9 +32,76 @@ f.parentNode.insertBefore(j,f);
         <meta name="twitter:description" content="Soluções eficientes em mobiliário corporativo, com inovação, agilidade, qualidade e preço justo. Mais de 20 anos de experiência no mercado de móveis." />
         <meta name="twitter:image" content="https://b3ambientescorporativos.com.br/IMG/Logob3.png" />
         <title>B3 Ambientes Corporativos</title>
+
+        <!-- Content Security Policy (ajustada para Google Fonts e vercel.live) -->
+        <meta http-equiv="Content-Security-Policy" content="
+            default-src 'self' https: data: blob:;
+            script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://unpkg.com https://www.googletagmanager.com https://www.google-analytics.com https://www.googleadservices.com https://www.gstatic.com https://www.google.com https://stats.g.doubleclick.net https://adservice.google.com https://adservice.google.com.br https://googleads.g.doubleclick.net https://vercel.live https://*.vercel.live;
+            style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://unpkg.com https://fonts.googleapis.com;
+            font-src 'self' data: blob: https://fonts.gstatic.com https:;
+            connect-src 'self' https:;
+            img-src 'self' data: blob: https:;
+            frame-src 'self' https://www.googletagmanager.com https://www.google.com https://googleads.g.doubleclick.net https://googleusercontent.com http://googleusercontent.com;
+        ">
+
+        <!-- Favicon -->
+        <link rel="icon" href="IMG/Logob3.png" type="image/png">
+
+        <!-- Google Ads & Analytics (mantidos) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16560041846"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'AW-16560041846');
+        </script>
+    
+        <script>
+        document.addEventListener('click', function(e){
+          var el = e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
+          if(!el) return;
+          try{ gtag('event','conversion',{send_to:'AW-16560041846/LjtJCJ2SqLMbEPbeuNg9',value:50.0,currency:'BRL'}); }catch(e){}
+        });
+        </script>
+    
+        <script>
+        setTimeout(function(){
+          if(typeof gtag!=='undefined'){
+            gtag('event','conversion',{send_to:'AW-16560041846/qZnnCMYVzrMbEPbeuNg9',value:5.0,currency:'BRL'});
+          }
+        },90000);
+        </script>
+    
+        <script>
+        (function(){
+          var fired=false;
+          window.addEventListener('scroll',function(){
+            if(fired)return;
+            var perc=(window.scrollY/(document.body.scrollHeight-window.innerHeight))*100;
+            if(perc>=50 && typeof gtag!=='undefined'){
+              gtag('event','conversion',{send_to:'AW-16560041846/xrcPCKFEzrMbEPbeuNg9',value:3.0,currency:'BRL'});
+              fired=true;
+            }
+          });
+        })();
+        </script>
+    
+        <script>
+        (function(){
+          try{
+            var k='b3_pageCount',c=parseInt(sessionStorage.getItem(k)||'0',10)+1;
+            sessionStorage.setItem(k,String(c));
+            if(c===3 && typeof gtag!=='undefined'){
+              gtag('event','conversion',{send_to:'AW-16560041846/kCajCMTtzrMbEPbeuNg9',value:5.0,currency:'BRL'});
+            }
+          }catch(e){}
+        })();
+        </script>
+        
         <link rel="stylesheet" href="contato2.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
         <script src="https://unpkg.com/@phosphor-icons/web"></script>
     </head>
 <body>
@@ -60,9 +134,300 @@ f.parentNode.insertBefore(j,f);
             </nav>
             <div class="header-right">
                 <a href="https://wa.me/c/558189198675" target="_blank" class="contact-button">Solicite seu Orçamento</a>
+                
                 <button class="mobile-menu-icon" id="mobile-menu-button">
                     <i class="ph ph-list"></i>
                 </button>
+                
             </div>
         </div>
     </header>
+
+    <div class="mobile-nav" id="mobile-nav">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="sobrenos.html">Sobre nós</a></li>
+            <li><a href="produtos.html">Produtos</a></li>
+            <li><a href="parceiros.html">Club&Casa</a></li>
+            <li><a href="contato2.html">Contato</a></li>
+            <li><a href="https://wa.me/c/558189198675" target="_blank">Solicite seu Orçamento</a></li> 
+        </ul>
+    </div>
+
+    <main>
+        <section class="hero-section">
+            <div class="swiper hero-swiper">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide hero-slide" style="background-image: url('IMG/b3carrocel.jpeg');">
+                        <div class="hero-content" data-aos="fade-up">
+                            <h1>Soluções Completas para Ambientes Corporativos</h1>
+                            <p>Inovação, agilidade e qualidade para transformar o seu espaço de trabalho.</p>
+                            <a href="produtos.html" class="cta-button">Conheça Nossas Soluções</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hero-slide" style="background-image: url('IMG/banner 2.jpeg');">
+                        <div class="hero-content">
+                            <h1>Design que Inspira Produtividade</h1>
+                            <p>Criamos projetos que unem estética, conforto e funcionalidade.</p>
+                            <a href="https://wa.me/message/JWIVEWQSBKEBP1" class="cta-button">Fale com um Especialista</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide hero-slide" style="background-image: url('IMG/banner3.jpeg');">
+                        <div class="hero-content">
+                            <h1>Mobiliário Sob Medida para Sua Empresa</h1>
+                            <p>Do planejamento à entrega, cuidamos de cada detalhe para você.</p>
+                            <a href="#cases" class="cta-button">Veja Nossos Cases</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next hero-next hero-nav-arrow"></div>
+                <div class="swiper-button-prev hero-prev hero-nav-arrow"></div>
+                <div class="swiper-pagination hero-pagination"></div>
+            </div>
+        </section>
+
+        <section class="features">
+             <div class="container">
+                 <h2 data-aos="fade-up">Nossos Diferenciais</h2>
+                 <div class="features-grid">
+                     <div class="feature-card" data-aos="fade-up" data-aos-delay="100"><i class="ph ph-sketch-logo"></i><h3>Design Inovador</h3><p>Projetos que unem estética e funcionalidade.</p></div>
+                     <div class="feature-card" data-aos="fade-up" data-aos-delay="200"><i class="ph ph-check-circle"></i><h3>Qualidade Garantida</h3><p>Mobiliário com alta durabilidade e acabamento.</p></div>
+                     <div class="feature-card" data-aos="fade-up" data-aos-delay="300"><i class="ph ph-handshake"></i><h3>Atendimento Personalizado</h3><p>Acompanhamos seu projeto do início ao fim.</p></div>
+                 </div>
+             </div>
+        </section>
+        
+        <section class="products" id="produtos">
+            <div class="container">
+                <h2 data-aos="fade-up">Alguns dos Nossos Produtos</h2>
+                <div class="swiper product-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/CADEIRA BERGEN ALTA BRANCA.jpg" alt="Cadeira Alles"><h3></h3><p>Cadeiras Office</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/cadeira office mona.jpg" alt="Cadeira Office Mona"><h3></h3><p>Cadeiras Office</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/CADEIRA OFFICE OSLO RODÍZIO CARAMELO COM MOLAS.jpg" alt="Cadeira Office OSLO"><h3></h3><p>Cadeiras Office</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs16.jpeg" alt="Cadeira Addit"><h3></h3><p>Cadeiras e Mesas</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs13.jpeg" alt="Cadeira BERGEN"><h3></h3><p>Cadeiras Decor</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs1.jpeg" alt="Sofá gabinetto"><h3></h3><p>Sofá Modular</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs2.jpeg" alt="Sofá gabinetto"><h3></h3><p>Sofá Organico</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/gabinetto3.png" alt="Decoração Corporativa"><h3></h3><p>Sofá Modular</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs3.jpg" alt="Poltrona Minimalista"><h3></h3><p>Sofá com Acústica</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs4.jpeg" alt="Sofá Lounge"><h3></h3><p>Poltronas</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs5.jpeg" alt="estação de trabalho"><h3></h3><p>Plataforma</p></a></div>
+                        
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/estação1 (2).png" alt="estação de trabalho"><h3></h3><p>Mesa Reunião</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs14.jpeg" alt="estação de trabalho"><h3></h3><p>Armários em aço</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs7.jpeg" alt="estação de trabalho"><h3></h3><p>Call Center</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs8.jpeg" alt="estação de trabalho"><h3></h3><p>Armarios</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs9.jpeg" alt="Divisoria"><h3></h3><p>Soluções Acústicas</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs15.jpg" alt="Divisoria"><h3></h3><p>Estante Modular</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs10.jpeg" alt="Divisoria"><h3></h3><p>Divisoria piso ao teto</p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs11.jpeg" alt="Divisoria"><h3></h3><p>Mesa Diretoria </p></a></div>
+                        <div class="swiper-slide product-card"><a href="#"><img src="IMG/subs12.jpeg" alt="Divisoria"><h3></h3><p>Cabines Acústicas</p></a></div>
+                    </div>
+                    <div class="swiper-pagination product-pagination"></div>
+                </div>
+                <div class="swiper-button-next product-next"></div>
+                <div class="swiper-button-prev product-prev"></div>
+            </div>
+        </section>
+        
+        <section class="cases" id="cases">
+    <div class="container">
+        <h2 data-aos="fade-up">Cases de Sucesso</h2>
+       
+        <a href="https://www.instagram.com/b3corporativos/" target="_blank" class="cases-subtitle-link">
+            <h3>acompanhe nossos cases de sucesso no instagram</h3>
+        </a>
+        
+        <div class="swiper cases-swiper" data-aos="fade-up"> 
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/reel/DJnJ-FGOfzn" class="case-card"> 
+                        <img src="IMG/case.jpg" alt="Projeto Oralcadodontologia">
+                        <div class="case-info">
+                            <h3>Oralcad Odontologia</h3>
+                            <p>Projeto completo de mobiliário  para um ambiente de alta performance.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/reel/DHJE1sTuhKO" class="case-card">
+                        <img src="https://scontent.cdninstagram.com/v/t39.30808-6/468303858_18290276977224368_4369776916783884138_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ig_cache_key=MzI2MzAwNTk1NDM3ODcxMjkwOA%3D%3D.3-ccb1-7&ccb=1-7&_nc_sid=58cdad&efg=eyJ2ZW5jb2RlX3RhZyI6InhwaWRzLjEwODB4MTA4MC5zZHIuQzMifQ%3D%3D&_nc_ohc=i8SxOkTCvWEQ7kNvwHBi2gm&_nc_oc=AdmC57zaMOuKWwkVMDKC_5V8D-WoXvsn97vOaQ8_juJyZPX9eJo5Gr3yV7fTxd-HQl2nVSytbt4klg0DCkwzeW-e&_nc_ad=z-m&_nc_cid=0&_nc_zt=23&_nc_ht=scontent.cdninstagram.com&_nc_gid=-qb1dgqKabn4dkiVu6ZNng&oh=00_AfeskGXEA1sWfrRawoGuc0qmIeFykG9PogTpo-VpDcJ0MA&oe=68FC8F74" alt="Coworking OBE/PE">
+                        <div class="case-info">
+                            <h3>Coworking OBE/PE</h3>
+                            <p>Renovação de ambiente com foco em sobriedade, modernidade e conforto.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/p/DPChhmoES1H/" class="case-card"> 
+                        <img src="IMG/CNE.png" alt="Novo Case 3"> 
+                        <div class="case-info">
+                            <h3>Grupo Cardan Nordeste</h3>
+                            <p>@grupocne confiou em nosso trabalho e junto com a parceira @fernandaduraes_arquitetura conseguimos entregar um projeto moderno, lindo e muito funcional!</p>
+                        </div>
+                    </a>
+                </div>
+
+                 <div class="swiper-slide">
+                    <a href="https://www.instagram.com/p/DD1s7DUODpd/" class="case-card"> 
+                        <img src="IMG/SOLB.jpeg" alt="Novo Case 4">
+                        <div class="case-info">
+                            <h3>SOLB Clínicas Especializadas</h3>
+                            <p>Durante esse ano tivemos a oportunidade de realizar sonhos, desejos, conquistas.. é sobre isso, nossa felicidade é fazer parte desse desses momentos!
+
+                                Agradecemos mais uma vez à oportunidade e confiança </p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="swiper-slide">
+                    <a href="https://www.instagram.com/p/DLpm-ZquUTd" class="case-card"> 
+                        <img src="IMG/Tolive.jpeg" alt="Novo Case 4">
+                        <div class="case-info">
+                            <h3>Tolive Construtora</h3>
+                            <p>Parabéns pelo projeto @tolivebr @cris_asfora ficou show!
+                                
+                                Ratificamos mais uma vez nossos agradecimentos à oportunidade e confiança. Contem sempre com a B3</p>
+                        </div>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="swiper-pagination cases-pagination"></div> 
+        </div>
+        
+         <div class="swiper-button-next cases-next"></div> 
+        <div class="swiper-button-prev cases-prev"></div>
+        
+    </div>
+</section>
+        
+        <section class="reviews">
+            <div class="container">
+                <h2 data-aos="fade-up">O que nossos clientes dizem</h2>
+                <div class="reviews-grid">
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="review-stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-text">"Fiquei super satisfeita com minhas compras na Loja B3, da Conselheiro Aguiar! As cadeiras de escritório têm ótimo acabamento, são confortáveis e a entrega foi dentro do prazo."</p>
+                        <div class="review-author">
+                            <img src="IMG/nara campos.png" alt="Foto do cliente Nara Campos">
+                            <div class="author-info">
+                                <strong>Nara Campos</strong>
+                                <span>Avaliação do Google</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="review-stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-text">"Atendimento muito bom, super prestativa e atenciosa, os produtos são maravilhosos de qualidade e com um preço incrivel."</p>
+                        <div class="review-author">
+                            <img src="IMG/mari coutinho.png" alt="Foto do cliente Mari Coutinho">
+                            <div class="author-info">
+                                <strong>Mari Coutinho</strong>
+                                <span>Avaliação do Google</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="review-stars">
+                            <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                        </div>
+                        <p class="review-text">"Empresa séria, cumpre prazos e excelentes preços."</p>
+                        <div class="review-author">
+                            <img src="IMG/andrea alves.png" alt="Foto do cliente Andrea Alves">
+                            <div class="author-info">
+                                <strong>Andrea Alves</strong>
+                                <span>Avaliação do Google</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container about-flex">
+                <div class="about-image" data-aos="fade-right">
+                    <iframe title="Tour Virtual da B3" src="https://www.google.com/maps/embed?pb=!3m2!1spt-BR!2sbr!4v1724446252075!5m2!1spt-BR!2sbr!6m8!1m7!1sCAoSLEFGMVFpcE9ocmZKcjVuRUFyU2EwZ0lwOEp5SHNmbXg1dEVkRURQWHM3Znkw!2m2!1d-8.0959410303665!2d-34.885025353839!3f1.205817113802766!4f-41.63084711729578!5f0.7820865974627469" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="about-text" data-aos="fade-left">
+                    <h2>Mais de 20 anos de experiência a sua disposição</h2>
+                    <p>Somos uma empresa pernambucana dedicada a oferecer soluções eficientes em mobiliário corporativo, com inovação, agilidade, qualidade e preço justo.</p>
+                    <a href="sobrenos.html" class="cta-button-secondary">Nossa História</a>
+                </div>
+            </div>
+        </section>
+        
+        <section class="clients" id="clientes">
+            <div class="container">
+                <h2 data-aos="fade-up">Alguns dos Nossos Clientes</h2>
+                <div class="swiper clients-swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="IMG/sebrae.png" alt="Logo Sebrae"></div>
+                        <div class="swiper-slide"><img src="IMG/unileaver.png" alt="Logo Unilever"></div>
+                        <div class="swiper-slide"><img src="IMG/bosh.png" alt="Logo Bosch"></div>
+                        <div class="swiper-slide"><img src="IMG/basf.png" alt="Logo Basf"></div>
+                        <div class="swiper-slide"><img src="IMG/vivix.jpg" alt="Logo Vivix"></div>
+                        <div class="swiper-slide"><img src="IMG/oab.jpg" alt="Logo OAB"></div>
+                        <div class="swiper-slide"><img src="IMG/seara.png" alt="Logo Seara"></div>
+                        <div class="swiper-slide"><img src="IMG/dnata.jpg" alt="Logo Dnata"></div>
+                        <div class="swiper-slide"><img src="IMG/medical.jpg" alt="Logo Medical"></div>
+                        <div class="swiper-slide"><img src="IMG/tapa.png" alt="Logo Tapa de Cuadril"></div>
+                        <div class="swiper-slide"><img src="IMG/ciafit.jpg" alt="Logo Ciafit"></div>
+                        <div class="swiper-slide"><img src="IMG/maxplural.jpeg" alt="Logo Max Plural"></div>
+                        <div class="swiper-slide"><img src="IMG/virtua.jpeg" alt="Logo virtua"></div>
+                        <div class="swiper-slide"><img src="IMG/betesport.png" alt="betesport"></div>
+                        <div class="swiper-slide"><img src="IMG/cia.png" alt="Logo cia"></div>
+                        <div class="swiper-slide"><img src="IMG/country.png" alt="Logo country"></div>
+                        <div class="swiper-slide"><img src="IMG/tolive.jpg" alt="Logo tolive"></div>
+                        <div class="swiper-slide"><img src="IMG/isis.jpg" alt="Logo isis"></div>
+                        <div class="swiper-slide"><img src="IMG/fps.jpg" alt="Logo fps"></div>
+                        <div class="swiper-slide"><img src="IMG/suvinil.png" alt="Logo Suvinil"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="footer">
+        <section class="redes">
+            <a href="https://wa.me/message/JWIVEWQSBKEBP1" target="_blank">
+                <img src="https://img.icons8.com/?size=100&id=16733&format=png&color=ffffff" alt="WhatsApp" class="icon">WhatsApp
+            </a>
+            <a href="https://www.instagram.com/b3corporativos/" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/instagram-new.png" alt="Instagram" class="icon">@b3corporativos
+            </a>
+            <a href="tel:+5581989198675" target="_blank">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/phone.png" alt="Telefone" class="icon">(81) 98919.8675 
+            </a>
+            <a href="#horarios" target="_self">
+                <img src="https://img.icons8.com/ios-filled/50/ffffff/clock.png" alt="Horário de Funcionamento" class="icon">Segunda - Sexta 9:00 - 18:00 | Sábado 9:00 - 13:00
+            </a>
+        </section>
+        <div class="containerfooter">
+            <p>&copy; 2024 B3 Ambientes Corporativos. Todos os direitos reservados. | <a href="politica.html" class="footer-link">Política de Privacidade</a></p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/c/558189198675" target="_blank" class="whatsapp-icon">
+        <img src="IMG/whatsappgif.gif" alt="Ícone flutuante do WhatsApp" />
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    <script src="scripts2.js"></script>
+</body>
+</html>
