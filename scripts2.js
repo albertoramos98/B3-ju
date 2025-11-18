@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', function() { // <-- START of the main function
+document.addEventListener('DOMContentLoaded', function() {
 
-    // 1. INICIALIZA O AOS (ANIMAÇÕES AO ROLAR A PÁGINA)
+    // 1. INICIALIZA O AOS
     if (typeof AOS !== 'undefined') {
         AOS.init({
             duration: 1000,
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
         });
     }
 
-    // 2. CONTROLA O CARROSSEL DE BANNERS DO TOPO (HERO)
+    // 2. HERO SWIPER
     const heroSwiper = new Swiper('.hero-swiper', {
         loop: true,
         effect: 'fade',
@@ -42,9 +42,9 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
         }
     });
 
-    // 3. CONTROLA O CARROSSEL DE PRODUTOS (AGORA COM LOOP INFINITO 🔁)
+    // 3. PRODUCT SWIPER
     const productSwiper = new Swiper('.product-swiper', {
-        loop: true, // 🔁 agora o carrossel gira infinitamente
+        loop: true,
         slidesPerView: 1,
         spaceBetween: 20,
         pagination: {
@@ -55,11 +55,10 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
             nextEl: '.product-next',
             prevEl: '.product-prev'
         },
-        // autoplay opcional (ativa se quiser)
-         autoplay: {
-             delay: 4000,
-             disableOnInteraction: false,
-         },
+        autoplay: {
+            delay: 4000,
+            disableOnInteraction: false,
+        },
         breakpoints: {
             576: {
                 slidesPerView: 2,
@@ -77,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
         }
     });
 
-    // 4. CONTROLA O CARROSSEL DE CLIENTES
+    // 4. CLIENTS SWIPER
     const clientsSwiper = new Swiper('.clients-swiper', {
         loop: true,
         slidesPerView: 3,
@@ -90,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
         }
     });
 
-    // 5. CONTROLA O MENU MOBILE
+    // 5. MENU MOBILE
     const mobileMenuButton = document.getElementById('mobile-menu-button');
     const mobileNav = document.getElementById('mobile-nav');
 
@@ -100,30 +99,30 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
         });
     }
 
-}); // <-- END of the main function
-// 6. CARROSSEL CASES DE SUCESSO (NOVO)
+    // 6. CARROSSEL CASES DE SUCESSO
     const casesSwiper = new Swiper('.cases-swiper', {
-        loop: true, // Loop infinito
-        slidesPerView: 1, // Começa com 1 slide visível em telas pequenas
-        spaceBetween: 30, // Espaço entre os slides
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
         pagination: { 
-            el: '.cases-pagination', // Usa a classe customizada
+            el: '.cases-pagination',
             clickable: true 
         },
         navigation: { 
-            nextEl: '.cases-next', // Usa a classe customizada
-            prevEl: '.cases-prev'  // Usa a classe customizada
+            nextEl: '.cases-next',
+            prevEl: '.cases-prev'
         },
         breakpoints: {
-            // A partir de 768px (tablets), mostra 2 cases lado a lado
             768: {
               slidesPerView: 2,
               spaceBetween: 30
             }
-            // Não precisa de breakpoint maior se 2 for o ideal
         }
     });
+
+    // 7. COOKIE BANNER
     const existingBanner = document.getElementById("cookie-banner");
+    
     if (!existingBanner) {
         const cookieBanner = document.createElement("div");
         cookieBanner.id = "cookie-banner";
@@ -141,10 +140,10 @@ document.addEventListener('DOMContentLoaded', function() { // <-- START of the m
             cookieBanner.style.display = "flex";
         }
 
-        document
-            .getElementById("accept-cookies")
-            .addEventListener("click", () => {
-                localStorage.setItem("cookiesAccepted", "true");
-                cookieBanner.style.display = "none";
-            });
+        document.getElementById("accept-cookies").addEventListener("click", () => {
+            localStorage.setItem("cookiesAccepted", "true");
+            cookieBanner.style.display = "none";
+        });
     }
+
+}); // <-- TUDO ESTÁ AGORA DENTRO DA FUNÇÃO
