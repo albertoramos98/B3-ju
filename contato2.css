@@ -265,7 +265,7 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 /* --- ESTILOS PARA A PÁGINA PARCEIROS (CLUB&CASA) --- */
 
 .page-title-section {
-    padding: 40px 0;
+    padding: 8px 0;
     background-color: var(--light-gray-color); /* Fundo suave para o título */
     text-align: center;
 }
@@ -277,18 +277,22 @@ h2 { font-size: 2.5rem; text-align: center; margin-bottom: 50px; }
 }
 
 .clubcasa-content {
-    padding: 30px 0;
+    padding: 0% 0;
     background-color: var(--white-color);
+    margin: 0%;
 }
 
 .logo-parceiro {
     text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
+    margin: 0%;
 }
 
 .logo-parceiro img {
-    max-width: 250px; /* Ajuste o tamanho da logo como preferir */
+    max-width: 650px; /* Ajuste o tamanho da logo como preferir */
     height: auto;
+    margin:-20% ;
+    padding-top: 4%;
 }
 
 .texto-parceria {
